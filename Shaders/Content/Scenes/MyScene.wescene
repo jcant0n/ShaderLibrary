@@ -10,14 +10,14 @@ Items:
         Id: 809f1d2c-2305-4916-acfe-f81399ffb235
         IsEnabled: true
         LocalOrientation:
-          W: 0.923879564
-          X: -0.382683396
-          Y: 0.0
-          Z: 0.0
+          W: 0.989425838
+          X: -0.1385241
+          Y: 0.0425688326
+          Z: 0.00595939672
         LocalPosition:
-          X: 0.0
-          Y: 2.0
-          Z: 2.0
+          X: 0.0418045186
+          Y: 0.387891084
+          Z: 1.05750799
         LocalScale:
           X: 1.0
           Y: 1.0
@@ -143,8 +143,8 @@ Items:
           Z: 0.0
         LocalPosition:
           X: 0.0
-          Y: 0.0
-          Z: 0.0
+          Y: 1.79786634
+          Z: 2.14322355E-07
         LocalScale:
           X: 1.0
           Y: 1.0
@@ -153,7 +153,7 @@ Items:
         Id: bb44cd62-4d92-418a-8a42-bbc2ed2b6f07
         AsignedTo: Default
         IsEnabled: true
-        Material: e98a34e7-4a77-48f6-be9c-3e4e3ac253a5
+        Material: 7be55fd9-37d7-4101-a51f-d2525bd66246
         UseCopy: false
       - !Evergine.Components.Graphics3D.SphereMesh,Evergine.Components
         Id: 3ef37285-f016-4173-bbf0-278ec1624224
@@ -189,6 +189,190 @@ Items:
         UpdateOrder: 0.5
     Children: []
     Id: 6a094fea-e84d-4cbc-bb6e-60ccc60b5693
+  - !Evergine.Framework.Assets.AssetSources.Entities.EntityItemModel,Evergine.Framework
+    Name: Parallax
+    Tag: null
+    IsEnabled: true
+    IsStatic: false
+    Components:
+      - !Evergine.Framework.Graphics.Transform3D,Evergine.Framework
+        Id: 1566fba1-c563-49bb-b584-a281d055dea7
+        IsEnabled: true
+        LocalOrientation:
+          W: 0.00931872427
+          X: -0.00756314397
+          Y: -0.707912385
+          Z: -0.706198215
+        LocalPosition:
+          X: 0.0
+          Y: 0.185192615
+          Z: 2.20766019E-08
+        LocalScale:
+          X: 0.274380893
+          Y: 0.264380902
+          Z: 0.274380893
+      - !Evergine.Components.Graphics3D.MaterialComponent,Evergine.Framework
+        Id: 7850769b-74c8-4e73-8ce9-dd7b3191026d
+        AsignedTo: Default
+        IsEnabled: true
+        Material: 0eccd676-5459-491b-ae5b-001de8dd3585
+        UseCopy: false
+      - !Evergine.Components.Graphics3D.PlaneMesh,Evergine.Components
+        Id: 9b63173d-ab59-4cff-b4dc-082cbe1ee012
+        Height: 1.0
+        IsEnabled: true
+        Origin:
+          X: 0.5
+          Y: 0.5
+        PlaneNormal: YPositive
+        TwoSides: false
+        UMirror: false
+        UOffset: 0.0
+        UTile: 1.0
+        VMirror: false
+        VOffset: 0.0
+        VTile: 1.0
+        Width: 1.0
+      - !Evergine.Components.Graphics3D.MeshRenderer,Evergine.Framework
+        Id: 10691d82-8a3e-4387-b8f8-14ff9b040e3e
+        DebugBoundingbox: true
+        IsCullingEnabled: true
+        IsEnabled: true
+        OrderBias: 0
+        RenderFlags: CastShadows
+    Children:
+      - !Evergine.Framework.Assets.AssetSources.Entities.PrefabInstanceModel,Evergine.Framework
+        Id: 06eefb23-8fa6-4f82-ab98-b6e7925852cb
+        Source: d7071414-dfc1-46bf-9f67-0a3389efb307
+        entityLinks: {}
+        modificationList:
+          - !Evergine.Framework.Assets.AssetSources.Entities.PrefabModification%601[[System.String,System.Private.CoreLib]],Evergine.Framework
+            Name: Name
+            Target: 06eefb23-8fa6-4f82-ab98-b6e7925852cb
+            TypedValue: support_001
+          - !Evergine.Framework.Assets.AssetSources.Entities.PrefabModification%601[[Evergine.Mathematics.Vector3,Evergine.Mathematics]],Evergine.Framework
+            Name: LocalPosition
+            Target: 04997cfb-b252-430c-aa44-dccf23bbbd67
+            TypedValue:
+              X: -0.00145123841
+              Y: -0.0015675883
+              Z: -0.603622973
+          - !Evergine.Framework.Assets.AssetSources.Entities.PrefabModification%601[[Evergine.Mathematics.Vector3,Evergine.Mathematics]],Evergine.Framework
+            Name: LocalScale
+            Target: 04997cfb-b252-430c-aa44-dccf23bbbd67
+            TypedValue:
+              X: 2.9156549
+              Y: 0.075648427
+              Z: 2.9156549
+          - !Evergine.Framework.Assets.AssetSources.Entities.PrefabModification%25601[[Evergine.Mathematics.Quaternion,Evergine.Mathematics]],Evergine.Framework
+            Name: LocalOrientation
+            Target: 04997cfb-b252-430c-aa44-dccf23bbbd67
+            TypedValue:
+              W: 0.500986755
+              X: 0.500932932
+              Y: 0.500263333
+              Z: 0.497810245
+        removedComponentList: []
+    Id: 47dc6b64-8ff2-4919-ad8a-461202d86a93
+  - !Evergine.Framework.Assets.AssetSources.Entities.EntityItemModel,Evergine.Framework
+    Name: Equirectangular
+    Tag: null
+    IsEnabled: true
+    IsStatic: false
+    Components:
+      - !Evergine.Framework.Graphics.Transform3D,Evergine.Framework
+        Id: d8778644-ca4f-49a3-93d7-533ade8b3d6e
+        IsEnabled: true
+        LocalOrientation:
+          W: 0.70849961
+          X: 0.0
+          Y: 0.705711186
+          Z: -0.0
+        LocalPosition:
+          X: 1.53509581
+          Y: 0.175118685
+          Z: 2.03873967E-07
+        LocalScale:
+          X: 0.354316831
+          Y: 0.354316831
+          Z: 0.354316831
+      - !Evergine.Components.Graphics3D.MaterialComponent,Evergine.Framework
+        Id: 705f6501-92bf-4d5d-922c-bf3f7c87c0e5
+        AsignedTo: Default
+        IsEnabled: true
+        Material: b3525f40-6b84-4f3a-be22-e9ba03e21a4e
+        UseCopy: false
+      - !Evergine.Components.Graphics3D.TeapotMesh,Evergine.Components
+        Id: 7425b9cb-71ea-4646-bc51-6b9142161259
+        IsEnabled: true
+        Size: 1.0
+        Tessellation: 16
+      - !Evergine.Components.Graphics3D.MeshRenderer,Evergine.Framework
+        Id: 5ec1303d-bae7-429b-b364-eb7a1f0823e4
+        DebugBoundingbox: true
+        IsCullingEnabled: true
+        IsEnabled: true
+        OrderBias: 0
+        RenderFlags: CastShadows
+    Children:
+      - !Evergine.Framework.Assets.AssetSources.Entities.PrefabInstanceModel,Evergine.Framework
+        Id: 995ae684-85b8-45ea-a89f-696ca3373f65
+        Source: d7071414-dfc1-46bf-9f67-0a3389efb307
+        entityLinks: {}
+        modificationList:
+          - !Evergine.Framework.Assets.AssetSources.Entities.PrefabModification%601[[System.String,System.Private.CoreLib]],Evergine.Framework
+            Name: Name
+            Target: 06eefb23-8fa6-4f82-ab98-b6e7925852cb
+            TypedValue: support_002
+          - !Evergine.Framework.Assets.AssetSources.Entities.PrefabModification%601[[Evergine.Mathematics.Vector3,Evergine.Mathematics]],Evergine.Framework
+            Name: LocalPosition
+            Target: 04997cfb-b252-430c-aa44-dccf23bbbd67
+            TypedValue:
+              X: -0.000283630565
+              Y: -0.494243175
+              Z: -0.0721335411
+          - !Evergine.Framework.Assets.AssetSources.Entities.PrefabModification%601[[Evergine.Mathematics.Vector3,Evergine.Mathematics]],Evergine.Framework
+            Name: LocalScale
+            Target: 04997cfb-b252-430c-aa44-dccf23bbbd67
+            TypedValue:
+              X: 2.25786614
+              Y: 0.0564466529
+              Z: 2.25786614
+          - !Evergine.Framework.Assets.AssetSources.Entities.PrefabModification%25601[[Evergine.Mathematics.Quaternion,Evergine.Mathematics]],Evergine.Framework
+            Name: LocalOrientation
+            Target: 04997cfb-b252-430c-aa44-dccf23bbbd67
+            TypedValue:
+              W: 0.00197169185
+              X: 0.0
+              Y: -0.999997973
+              Z: 0.0
+          - !Evergine.Framework.Assets.AssetSources.Entities.PrefabModification%601[[Evergine.Mathematics.Vector3,Evergine.Mathematics]],Evergine.Framework
+            Name: LocalScale
+            Target: 647c922a-860f-42eb-94e9-060b002aee83
+            TypedValue:
+              X: 0.0614837222
+              Y: 0.0614837222
+              Z: 0.0664837211
+          - !Evergine.Framework.Assets.AssetSources.Entities.PrefabModification%601[[System.String,System.Private.CoreLib]],Evergine.Framework
+            Name: Text
+            Target: 0ac42e8b-3eae-47d6-89dc-84c2d777116a
+            TypedValue: Equirectangular Reflections
+          - !Evergine.Framework.Assets.AssetSources.Entities.PrefabModification%601[[Evergine.Mathematics.Vector2,Evergine.Mathematics]],Evergine.Framework
+            Name: Size
+            Target: 0ac42e8b-3eae-47d6-89dc-84c2d777116a
+            TypedValue:
+              X: 15.0
+              Y: 1.10000002
+          - !Evergine.Framework.Assets.AssetSources.Entities.PrefabModification%601[[System.Boolean,System.Private.CoreLib]],Evergine.Framework
+            Name: Wrapping
+            Target: 0ac42e8b-3eae-47d6-89dc-84c2d777116a
+            TypedValue: false
+          - !Evergine.Framework.Assets.AssetSources.Entities.PrefabModification%601[[System.Boolean,System.Private.CoreLib]],Evergine.Framework
+            Name: Ellipsis
+            Target: 0ac42e8b-3eae-47d6-89dc-84c2d777116a
+            TypedValue: false
+        removedComponentList: []
+    Id: fbeb799e-6017-4974-bb73-9990d3959e7c
 Managers:
   - !Evergine.Framework.Managers.AssetSceneManager,Evergine.Framework
     Id: 4ae9964a-5a8a-463f-b714-050389b3b68c

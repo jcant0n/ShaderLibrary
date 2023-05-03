@@ -1,0 +1,31 @@
+!Evergine.Assets.Exporters.MaterialMetaFile,Evergine.Assets
+Id: b3525f40-6b84-4f3a-be22-e9ba03e21a4e
+DefaultProfile:
+  ExcludeAsset: false
+  Name: null
+  Platform: Undefined
+ExportAsRaw: false
+MaterialInfo:
+  Id: 42ee5b9c-2bab-4e3f-a0c1-0aaad90c1278
+  ActiveDirectives: []
+  AllowInstancing: false
+  EffectID: 2a80036c-7008-4a41-97ea-0482293d3336
+  Layer: 0db59561-b3f5-444f-b5de-e62e3a5b42bf
+  OrderBias: 0
+  Parameters:
+    - Name: WorldViewProj
+      Type: Evergine.Mathematics.Matrix4x4,Evergine.Mathematics
+      ValueByteArray: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==
+    - Name: World
+      Type: Evergine.Mathematics.Matrix4x4,Evergine.Mathematics
+      ValueByteArray: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==
+    - Name: CameraPosition
+      Type: Evergine.Mathematics.Vector3,Evergine.Mathematics
+      ValueByteArray: AAAAAAAAAAAAAAAA
+  Samplers:
+    - ID: 9018edf8-ea96-4721-bf83-5561942432e0
+      Name: TextureSampler
+  Textures:
+    - ID: 777794a2-5c02-431e-a0a3-e2d91d746746
+      Name: EnvironmentTexture
+Profiles: {}

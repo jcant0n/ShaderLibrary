@@ -2,7 +2,7 @@
 
 	cbuffer PerDrawCall : register(b0)
 	{
-		float4x4 WorldViewProj		: packoffset(c0);	[WorldViewProjection]
+		float4x4 WorldViewProj		: packoffset(c0); [WorldViewProjection]
 		float4x4 World				: packoffset(c4); [World]
 	};
 

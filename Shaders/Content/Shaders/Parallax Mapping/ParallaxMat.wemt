@@ -1,0 +1,41 @@
+!Evergine.Assets.Exporters.MaterialMetaFile,Evergine.Assets
+Id: 0eccd676-5459-491b-ae5b-001de8dd3585
+DefaultProfile:
+  ExcludeAsset: false
+  Name: null
+  Platform: Undefined
+ExportAsRaw: false
+MaterialInfo:
+  Id: 83bc7471-ecc5-4e09-a33d-12c8185fb87e
+  ActiveDirectives: []
+  AllowInstancing: false
+  EffectID: 59ce298a-cc41-449d-a31d-deb823d0f125
+  Layer: 0db59561-b3f5-444f-b5de-e62e3a5b42bf
+  OrderBias: 0
+  Parameters:
+    - Name: WorldViewProj
+      Type: Evergine.Mathematics.Matrix4x4,Evergine.Mathematics
+      ValueByteArray: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==
+    - Name: World
+      Type: Evergine.Mathematics.Matrix4x4,Evergine.Mathematics
+      ValueByteArray: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==
+    - Name: CameraPosition
+      Type: Evergine.Mathematics.Vector3,Evergine.Mathematics
+      ValueByteArray: AAAAAAAAAAAAAAAA
+    - Name: lightPosition
+      Type: Evergine.Mathematics.Vector3,Evergine.Mathematics
+      ValueByteArray: AAAAAAAAAD+amZk/
+    - Name: Parallax
+      Type: System.Single
+      ValueByteArray: j8L1PA==
+  Samplers:
+    - ID: 00000000-0000-0000-0000-000000000000
+      Name: null
+  Textures:
+    - ID: b39a8069-6beb-483e-a20e-451d40a20020
+      Name: DiffuseTexture
+    - ID: 6b562f4a-499e-4885-b98e-d0e485637cb4
+      Name: HeightTexture
+    - ID: de2bddab-4963-4b4a-a78b-3e87d21acdf7
+      Name: NormalTexture
+Profiles: {}
