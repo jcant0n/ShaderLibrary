@@ -6,7 +6,7 @@ DefaultProfile:
   Platform: Undefined
 ExportAsRaw: false
 MaterialInfo:
-  Id: 83bc7471-ecc5-4e09-a33d-12c8185fb87e
+  Id: 92d8ebb8-e185-444d-9630-2089150e859d
   ActiveDirectives: []
   AllowInstancing: false
   EffectID: 59ce298a-cc41-449d-a31d-deb823d0f125
@@ -24,7 +24,7 @@ MaterialInfo:
       ValueByteArray: AAAAAAAAAAAAAAAA
     - Name: lightPosition
       Type: Evergine.Mathematics.Vector3,Evergine.Mathematics
-      ValueByteArray: AAAAAAAAAD+amZk/
+      ValueByteArray: FK7HPwAAAD8AAIA/
     - Name: Parallax
       Type: System.Single
       ValueByteArray: j8L1PA==

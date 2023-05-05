@@ -1,0 +1,31 @@
+!Evergine.Assets.Exporters.ModelMetaFile,Evergine.Assets
+Id: 3fc20e80-440f-4c33-8427-426e762c253c
+Clips: []
+DefaultProfile:
+  ExcludeAsset: false
+  Name: null
+  Platform: Undefined
+ExportAnimations: true
+ExportAsRaw: false
+GenerateTangentSpace: true
+Profiles: {}
+Source:
+  Header:
+    Id: c959f186-e8a8-42ee-86b8-b069c2fc1340
+    IsCompressed: true
+  LastModified: 0001-01-01T00:00:00.0000000
+  ModelInfo:
+    Id: fbc3f679-9043-491e-8f36-5535af38cc69
+    AnimationTracks: []
+    EmbeddedResources: null
+    Materials:
+      - Item1: Skin
+        Item2: f0026f1e-a5a0-4369-b88a-b06a78a3b615
+    Nodes:
+      - Sketchfab_model
+      - Sketchfab_model.Root
+      - Sketchfab_model.Root.Lamp
+      - Sketchfab_model.Root.Lamp.Lamp
+      - Sketchfab_model.Root.Suzanne
+      - Sketchfab_model.Root.Suzanne.Suzanne_0
+SwapWindingOrder: false

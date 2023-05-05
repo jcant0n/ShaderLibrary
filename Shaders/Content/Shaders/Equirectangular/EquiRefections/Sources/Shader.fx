@@ -34,7 +34,7 @@
 		float4 pos : SV_POSITION;
 		float3 Nor	: NORMAL;
 		float2 Tex : TEXCOORD0;
-		float3 posW : TEXCOORD1;
+		float3 posw : TEXCOORD1;
 	};
 
 	PS_IN VS(VS_IN input)
@@ -42,9 +42,9 @@
 		PS_IN output = (PS_IN)0;
 
 		output.pos = mul(input.Position, WorldViewProj);
-		
-		output.posW = mul(input.Position.xyz, (float3x3)World);
-		output.Nor = input.Normal;
+		output.posw = mul(input.Position, World).xyz;
+
+		output.Nor = mul(input.Normal, (float3x3)World);
 		output.Tex = input.TexCoord;
 
 		return output;
@@ -52,8 +52,9 @@
 
 	float4 PS(PS_IN input) : SV_Target
 	{
-		float3 viewVector = normalize(input.posW - CameraPosition);
-		float3 reflectVec = normalize(reflect(viewVector, input.Nor));
+		float3 viewVector = normalize(input.posw - CameraPosition);
+		float3 normal = normalize(input.Nor);
+		float3 reflectVec = normalize(reflect(viewVector, normal));
 		
 		float lon = atan2(reflectVec.z, reflectVec.x);
 		float lat = acos(reflectVec.y);
