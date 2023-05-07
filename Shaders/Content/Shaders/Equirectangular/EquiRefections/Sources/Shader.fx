@@ -44,7 +44,7 @@
 		output.pos = mul(input.Position, WorldViewProj);
 		output.posw = mul(input.Position, World).xyz;
 
-		output.Nor = mul(input.Normal, (float3x3)World);
+		output.Nor = mul(float4(input.Normal, 0), World).xyz;
 		output.Tex = input.TexCoord;
 
 		return output;

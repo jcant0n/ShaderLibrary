@@ -51,16 +51,15 @@
 		PS_IN output = (PS_IN)0;
 
 		output.pos = mul(input.Position, WorldViewProj);
-		float3 posw = mul(input.Position.xyz, (float3x3)World);
+		float3 posw = mul(input.Position, World).xyz;
 		
-		float3 T = mul(input.Tangent.xyz, (float3x3)World);
-		float3 N = mul(input.Normal, (float3x3)World);
+		float3 T = mul(input.Tangent, World).xyz;
+		float3 N = mul(float4(input.Normal, 0), World).xyz;
 		float3 B = cross(T, N) * input.Tangent.w;
 		
 		float3x3 tbn = float3x3( normalize(T),
 								 normalize(B),
 								 normalize(N));
-		
 		
 		output.pixelPos = mul(posw, tbn);
 		output.viewPos = mul(CameraPosition, tbn);
@@ -75,7 +74,7 @@
 		float h = HeightTexture.Sample(TextureSampler, input.Tex).r;
 		
 		float3 viewDir = normalize(input.viewPos - input.pixelPos);		
-		float2 offset = (h * Parallax - Parallax / 2.0) * (viewDir.xy / viewDir.z);
+		float2 offset = (h * Parallax - (Parallax / 2.0)) * (viewDir.xy / viewDir.z);
 		
 		float2 uv = input.Tex + offset;
 		float3 diffuse = DiffuseTexture.Sample(TextureSampler, uv).rgb;

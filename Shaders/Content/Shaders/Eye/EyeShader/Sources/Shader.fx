@@ -56,8 +56,8 @@
 		float3 position = mul(input.Position, World).xyz;
 		float3 viewdir = CameraPosition - position;
 		
-		float3 T = mul(input.Tangent.xyz, (float3x3)World);
-		float3 N = mul(input.Normal, (float3x3)World);
+		float3 T = mul(input.Tangent, World).xyz;
+		float3 N = mul(float4(input.Normal, 0), World).xyz;
 		float3 B = cross(T, N) * input.Tangent.w;
 		
 		float3x3 tbn = float3x3( normalize(T),
@@ -89,8 +89,7 @@
 		//float h = HeightTexture.Sample(TextureSampler, uv * uvScale + 0.5).r;
 		float h = dis;
 		float3 v = normalize(input.viewDir);	
-		float2 offset =  h * Parallax - Parallax / 2.0;
-		offset *= (v.xy / v.z);
+		float2 offset =  (h * Parallax - Parallax / 2.0) * (v.xy / v.z);
 		
 		// Textures
 		float2 irisUV = uv * uvScale + 0.5 + offset;

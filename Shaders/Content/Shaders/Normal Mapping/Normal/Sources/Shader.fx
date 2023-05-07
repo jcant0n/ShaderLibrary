@@ -48,16 +48,15 @@
 		PS_IN output = (PS_IN)0;
 
 		output.pos = mul(input.Position, WorldViewProj);
-		float3 posw = mul(input.Position.xyz, (float3x3)World);
+		float3 posw = mul(input.Position, World).xyz;
 		
-		float3 T = mul(input.Tangent.xyz, (float3x3)World);
-		float3 N = mul(input.Normal, (float3x3)World);
+		float3 T = mul(input.Tangent, World).xyz;
+		float3 N = mul(float4(input.Normal, 0), World).xyz;
 		float3 B = cross(T, N) * input.Tangent.w;
 		
 		float3x3 tbn = float3x3( normalize(T),
 								 normalize(B),
 								 normalize(N));
-		
 		
 		output.pixelPos = mul(posw, tbn);
 		output.viewPos = mul(CameraPosition, tbn);

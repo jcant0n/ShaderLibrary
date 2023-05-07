@@ -10,14 +10,14 @@ Items:
         Id: 809f1d2c-2305-4916-acfe-f81399ffb235
         IsEnabled: true
         LocalOrientation:
-          W: 0.998223662
-          X: -0.056765642
-          Y: 0.0180609506
-          Z: 0.00102661399
+          W: 0.99762696
+          X: -0.0682075694
+          Y: -0.00936765037
+          Z: -0.000640918559
         LocalPosition:
-          X: 1.55494058
-          Y: 0.284270078
-          Z: 0.973623633
+          X: -0.0273442157
+          Y: 0.0910983458
+          Z: 0.393367499
         LocalScale:
           X: 1.0
           Y: 1.0
@@ -153,7 +153,7 @@ Items:
         Id: bb44cd62-4d92-418a-8a42-bbc2ed2b6f07
         AsignedTo: Default
         IsEnabled: true
-        Material: e7462838-8602-4524-a624-3fc322a280ae
+        Material: 5b06703d-3a41-4e0e-aae4-e5f97dcb70c6
         UseCopy: false
       - !Evergine.Components.Graphics3D.SphereMesh,Evergine.Components
         Id: 3ef37285-f016-4173-bbf0-278ec1624224
@@ -204,9 +204,9 @@ Items:
           Y: -0.00790364482
           Z: 0.0
         LocalPosition:
-          X: 1.5
-          Y: 0.185192615
-          Z: 2.20766019E-08
+          X: 1.58840537
+          Y: 0.185000002
+          Z: 1.89352278E-07
         LocalScale:
           X: 0.274380893
           Y: 0.264380902
