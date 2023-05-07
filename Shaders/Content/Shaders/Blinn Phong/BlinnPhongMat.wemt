@@ -1,0 +1,46 @@
+!Evergine.Assets.Exporters.MaterialMetaFile,Evergine.Assets
+Id: cdca01fe-0d90-485c-a12c-2cb2020c281c
+DefaultProfile:
+  ExcludeAsset: false
+  Name: null
+  Platform: Undefined
+ExportAsRaw: false
+MaterialInfo:
+  Id: e718cab0-f52e-4a3e-8063-557d412306a3
+  ActiveDirectives: []
+  AllowInstancing: false
+  EffectID: b0c45659-2239-4490-a654-3c2eb2074b4c
+  Layer: 0db59561-b3f5-444f-b5de-e62e3a5b42bf
+  OrderBias: 0
+  Parameters:
+    - Name: WorldViewProj
+      Type: Evergine.Mathematics.Matrix4x4,Evergine.Mathematics
+      ValueByteArray: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==
+    - Name: World
+      Type: Evergine.Mathematics.Matrix4x4,Evergine.Mathematics
+      ValueByteArray: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==
+    - Name: AmbientColor
+      Type: Evergine.Mathematics.Vector3,Evergine.Mathematics
+      ValueByteArray: AACAPwAAgD8AAIA/
+    - Name: AmbientPower
+      Type: System.Single
+      ValueByteArray: zcxMPQ==
+    - Name: CameraPosition
+      Type: Evergine.Mathematics.Vector3,Evergine.Mathematics
+      ValueByteArray: AAAAAAAAAAAAAAAA
+    - Name: SpecularPower
+      Type: System.Single
+      ValueByteArray: mpmZPg==
+    - Name: lightPosition
+      Type: Evergine.Mathematics.Vector3,Evergine.Mathematics
+      ValueByteArray: AAAAAAAAAAAAAIA/
+    - Name: Shininess
+      Type: System.Single
+      ValueByteArray: AAAAQg==
+  Samplers:
+    - ID: 9018edf8-ea96-4721-bf83-5561942432e0
+      Name: TextureSampler
+  Textures:
+    - ID: 8b1d459c-c433-4ee3-bfe5-b45fbce12736
+      Name: DiffuseTexture
+Profiles: {}
