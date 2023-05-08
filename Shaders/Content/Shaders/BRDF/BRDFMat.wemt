@@ -6,7 +6,7 @@ DefaultProfile:
   Platform: Undefined
 ExportAsRaw: false
 MaterialInfo:
-  Id: 01617bef-7037-4a7e-a1ad-d9122634b890
+  Id: ec35c34a-140e-4935-a7dd-30fb75eddb0a
   ActiveDirectives: []
   AllowInstancing: false
   EffectID: f73ed7cc-78fe-4ab9-a944-c0bf67dff936
@@ -30,10 +30,10 @@ MaterialInfo:
       ValueByteArray: CtejPA==
     - Name: Metallic
       Type: System.Single
-      ValueByteArray: xB6FPg==
+      ValueByteArray: /CgcPw==
     - Name: Roughness
       Type: System.Single
-      ValueByteArray: exSuPg==
+      ValueByteArray: OgpXPw==
     - Name: Reflectance
       Type: System.Single
       ValueByteArray: mpmZPg==
