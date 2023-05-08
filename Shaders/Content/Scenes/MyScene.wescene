@@ -153,7 +153,7 @@ Items:
         Id: bb44cd62-4d92-418a-8a42-bbc2ed2b6f07
         AsignedTo: Default
         IsEnabled: true
-        Material: 86169d4e-934a-4477-bb5e-cbbcb606d379
+        Material: 6537d37e-b4f8-42bf-a95d-de9c7278780b
         UseCopy: false
       - !Evergine.Components.Graphics3D.SphereMesh,Evergine.Components
         Id: 3ef37285-f016-4173-bbf0-278ec1624224
@@ -524,7 +524,7 @@ Items:
         removedComponentList: []
     Id: fbebc701-8ce9-49ba-beb3-c3d08893a15d
   - !Evergine.Framework.Assets.AssetSources.Entities.EntityItemModel,Evergine.Framework
-    Name: BlinnPhong
+    Name: brdfMicrofacet
     Tag: null
     IsEnabled: true
     IsStatic: false
@@ -763,49 +763,6 @@ Items:
         removedComponentList: []
     Id: a3559cff-04cf-4ff4-b693-7d1e5b91a074
   - !Evergine.Framework.Assets.AssetSources.Entities.EntityItemModel,Evergine.Framework
-    Name: pointLight
-    Tag: null
-    IsEnabled: true
-    IsStatic: false
-    Components:
-      - !Evergine.Framework.Graphics.Transform3D,Evergine.Framework
-        Id: 82f5f183-3680-4a13-883e-4205e3eb2f4f
-        IsEnabled: true
-        LocalOrientation:
-          W: 1.0
-          X: 0.0
-          Y: 0.0
-          Z: 0.0
-        LocalPosition:
-          X: -1.665573
-          Y: 0.230798393
-          Z: 0.552608907
-        LocalScale:
-          X: 1.0
-          Y: 1.0
-          Z: 1.0
-      - !Evergine.Framework.Graphics.PointLight,Evergine.Framework
-        Id: 108e8640-3158-48ef-b9eb-cb96cf8879bc
-        Color:
-          A: 255
-          B: 255
-          G: 255
-          R: 255
-        DebugMode: false
-        Intensity: 1.0
-        IsEnabled: true
-        IsShadowEnabled: false
-        LightRange: 20.0
-        LinearColor:
-          A: 1.0
-          B: 1.0
-          G: 1.0
-          R: 1.0
-        ShadowBias: 0.00400000019
-        ShadowOpacity: 1.0
-    Children: []
-    Id: a2b2ee35-f871-4b87-a9af-b5b48d3dbf32
-  - !Evergine.Framework.Assets.AssetSources.Entities.EntityItemModel,Evergine.Framework
     Name: suzanne_glb
     Tag: null
     IsEnabled: true
@@ -870,9 +827,9 @@ Items:
                   Y: 1.00545001
                   Z: 5.90386009
                 LocalScale:
-                  X: 1.00000215
-                  Y: 1.00000155
-                  Z: 1.00000203
+                  X: 1.0
+                  Y: 1.0
+                  Z: 1.0
             Children:
               - !Evergine.Framework.Assets.AssetSources.Entities.EntityItemModel,Evergine.Framework
                 Name: Lamp

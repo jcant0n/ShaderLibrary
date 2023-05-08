@@ -6,7 +6,7 @@ DefaultProfile:
   Platform: Undefined
 ExportAsRaw: false
 MaterialInfo:
-  Id: 24a42037-9c66-4235-aa99-f53ebcfbae13
+  Id: 01617bef-7037-4a7e-a1ad-d9122634b890
   ActiveDirectives: []
   AllowInstancing: false
   EffectID: f73ed7cc-78fe-4ab9-a944-c0bf67dff936
@@ -16,9 +16,40 @@ MaterialInfo:
     - Name: WorldViewProj
       Type: Evergine.Mathematics.Matrix4x4,Evergine.Mathematics
       ValueByteArray: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==
-    - Name: Color
+    - Name: World
+      Type: Evergine.Mathematics.Matrix4x4,Evergine.Mathematics
+      ValueByteArray: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==
+    - Name: CameraPosition
       Type: Evergine.Mathematics.Vector3,Evergine.Mathematics
-      ValueByteArray: mpmZPpqZmT4AAIA/
-  Samplers: null
-  Textures: null
+      ValueByteArray: AAAAAAAAAAAAAAAA
+    - Name: LightPosition
+      Type: Evergine.Mathematics.Vector3,Evergine.Mathematics
+      ValueByteArray: AAAAAAAAAAAAAABA
+    - Name: ambientFactor
+      Type: System.Single
+      ValueByteArray: CtejPA==
+    - Name: Metallic
+      Type: System.Single
+      ValueByteArray: xB6FPg==
+    - Name: Roughness
+      Type: System.Single
+      ValueByteArray: exSuPg==
+    - Name: Reflectance
+      Type: System.Single
+      ValueByteArray: mpmZPg==
+    - Name: irradiPerp
+      Type: System.Single
+      ValueByteArray: AAAgQQ==
+  Samplers:
+    - ID: 9018edf8-ea96-4721-bf83-5561942432e0
+      Name: TextureSampler
+  Textures:
+    - ID: 8b1d459c-c433-4ee3-bfe5-b45fbce12736
+      Name: BaseTexture
+    - ID: 00000000-0000-0000-0000-000000000000
+      Name: null
+    - ID: 00000000-0000-0000-0000-000000000000
+      Name: null
+    - ID: 00000000-0000-0000-0000-000000000000
+      Name: null
 Profiles: {}

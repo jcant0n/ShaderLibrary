@@ -6,7 +6,7 @@ DefaultProfile:
   Platform: Undefined
 ExportAsRaw: false
 MaterialInfo:
-  Id: e718cab0-f52e-4a3e-8063-557d412306a3
+  Id: d01e096e-f53e-4726-92af-1e9deac3c9ec
   ActiveDirectives: []
   AllowInstancing: false
   EffectID: b0c45659-2239-4490-a654-3c2eb2074b4c
@@ -24,7 +24,7 @@ MaterialInfo:
       ValueByteArray: AACAPwAAgD8AAIA/
     - Name: AmbientPower
       Type: System.Single
-      ValueByteArray: zcxMPQ==
+      ValueByteArray: CtejPA==
     - Name: CameraPosition
       Type: Evergine.Mathematics.Vector3,Evergine.Mathematics
       ValueByteArray: AAAAAAAAAAAAAAAA
