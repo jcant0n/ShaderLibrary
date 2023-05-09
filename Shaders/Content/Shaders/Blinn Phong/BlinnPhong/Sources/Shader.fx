@@ -8,7 +8,7 @@
 
 	cbuffer Params : register(b1)
 	{		
-		float3 AmbientColor 		: packoffset(c0.x); [Default(1.0, 1.0, 1.0)]
+		float3 AmbientColor 		: packoffset(c0.x); [Default(0.3, 0.3, 0.3)]
 		float AmbientPower			: packoffset(c0.w); [Default(0.05)]
 		float3 CameraPosition		: packoffset(c1.x); [CameraPosition]
 		float SpecularPower			: packoffset(c1.w); [Default(0.3)]
@@ -60,8 +60,8 @@
     	
     	// Diffuse
     	float3 lightDir = normalize(lightPosition - input.fragPos);
-    	float3 normal = normalize(input.Nor);
-    	float diff = max(dot(lightDir, normal), 0.0);
+    	float3 normal = input.Nor;
+    	float diff = saturate(dot(lightDir, normal));
     	float3 diffuse = diff * diffuseTex;
     	
     	// Specular
@@ -71,6 +71,7 @@
     	
     
 		float3 color = ambient + diffuse + specular;
+
 		return float4(color, 1.0);
 	}
 

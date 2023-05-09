@@ -1,15 +1,15 @@
 !Evergine.Assets.Exporters.MaterialMetaFile,Evergine.Assets
-Id: 2b1a08bc-402d-4f17-aa73-88651697bcd2
+Id: 76fc6411-fc35-4ad9-8e6f-34a781b17221
 DefaultProfile:
   ExcludeAsset: false
   Name: null
   Platform: Undefined
 ExportAsRaw: false
 MaterialInfo:
-  Id: ca3dc11f-4705-463e-916d-c5ebba639ea4
+  Id: 565edcf1-af54-43d3-9d33-11dd65477f09
   ActiveDirectives: []
   AllowInstancing: false
-  EffectID: f73ed7cc-78fe-4ab9-a944-c0bf67dff936
+  EffectID: dc835231-e656-4a26-af22-656ac808e903
   Layer: 0db59561-b3f5-444f-b5de-e62e3a5b42bf
   OrderBias: 0
   Parameters:
@@ -24,25 +24,40 @@ MaterialInfo:
       ValueByteArray: AAAAAAAAAAAAAAAA
     - Name: LightPosition
       Type: Evergine.Mathematics.Vector3,Evergine.Mathematics
-      ValueByteArray: AAAAAAAAAAAAAABA
+      ValueByteArray: AAAAP83MTD4AAAA/
     - Name: ambientFactor
       Type: System.Single
-      ValueByteArray: CtejPA==
+      ValueByteArray: lML1PA==
     - Name: Metallic
       Type: System.Single
-      ValueByteArray: /CgcPw==
+      ValueByteArray: AQAAPw==
     - Name: Roughness
       Type: System.Single
-      ValueByteArray: OgpXPw==
+      ValueByteArray: AACAPw==
     - Name: Reflectance
       Type: System.Single
       ValueByteArray: mpmZPg==
     - Name: irradiPerp
       Type: System.Single
-      ValueByteArray: AAAgQQ==
+      ValueByteArray: AAAAQA==
+    - Name: fLTDistortion
+      Type: System.Single
+      ValueByteArray: AACAPw==
+    - Name: iLTPower
+      Type: System.Single
+      ValueByteArray: 6FG4Pw==
+    - Name: fLTScale
+      Type: System.Single
+      ValueByteArray: AACAPw==
+    - Name: fLTAmbient
+      Type: System.Single
+      ValueByteArray: 61E4PQ==
+    - Name: SSColor
+      Type: Evergine.Mathematics.Vector3,Evergine.Mathematics
+      ValueByteArray: Xo/CPs3MTD7NzEw+
   Samplers:
-    - ID: 9018edf8-ea96-4721-bf83-5561942432e0
-      Name: TextureSampler
+    - ID: 00000000-0000-0000-0000-000000000000
+      Name: null
   Textures:
     - ID: 801c85e7-12dd-4851-a999-91c4898734bf
       Name: BaseTexture
@@ -52,4 +67,6 @@ MaterialInfo:
       Name: null
     - ID: 00000000-0000-0000-0000-000000000000
       Name: null
+    - ID: afdbf9c2-0bcf-4a74-9fac-7fb1f26ff33d
+      Name: TraslucencyTexture
 Profiles: {}

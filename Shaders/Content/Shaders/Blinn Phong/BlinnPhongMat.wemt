@@ -6,7 +6,7 @@ DefaultProfile:
   Platform: Undefined
 ExportAsRaw: false
 MaterialInfo:
-  Id: d01e096e-f53e-4726-92af-1e9deac3c9ec
+  Id: 27c9da3c-34a2-4473-b405-8625f56debd9
   ActiveDirectives: []
   AllowInstancing: false
   EffectID: b0c45659-2239-4490-a654-3c2eb2074b4c
@@ -41,6 +41,6 @@ MaterialInfo:
     - ID: 9018edf8-ea96-4721-bf83-5561942432e0
       Name: TextureSampler
   Textures:
-    - ID: 8b1d459c-c433-4ee3-bfe5-b45fbce12736
+    - ID: 801c85e7-12dd-4851-a999-91c4898734bf
       Name: DiffuseTexture
 Profiles: {}
