@@ -1,15 +1,15 @@
 !Evergine.Assets.Exporters.MaterialMetaFile,Evergine.Assets
-Id: 0eccd676-5459-491b-ae5b-001de8dd3585
+Id: bb924555-72a7-41d0-a6ec-1e8a491956c6
 DefaultProfile:
   ExcludeAsset: false
   Name: null
   Platform: Undefined
 ExportAsRaw: false
 MaterialInfo:
-  Id: 19537806-48dc-48f2-90e6-40696620baf8
+  Id: 4ca043fa-de78-419f-bb2b-036a10a5956c
   ActiveDirectives: []
   AllowInstancing: false
-  EffectID: 59ce298a-cc41-449d-a31d-deb823d0f125
+  EffectID: 030be622-4248-44cd-94f9-98f5a2b2bbf5
   Layer: 0db59561-b3f5-444f-b5de-e62e3a5b42bf
   OrderBias: 0
   Parameters:
@@ -24,17 +24,17 @@ MaterialInfo:
       ValueByteArray: AAAAAAAAAAAAAAAA
     - Name: lightPosition
       Type: Evergine.Mathematics.Vector3,Evergine.Mathematics
-      ValueByteArray: AwCQP5qZmT4AAIA/
+      ValueByteArray: 5Hp0QClcDz8AAIA/
     - Name: heightScale
       Type: System.Single
       ValueByteArray: j8L1PA==
   Samplers:
-    - ID: 00000000-0000-0000-0000-000000000000
-      Name: null
+    - ID: 9018edf8-ea96-4721-bf83-5561942432e0
+      Name: TextureSampler
   Textures:
     - ID: b39a8069-6beb-483e-a20e-451d40a20020
       Name: DiffuseTexture
-    - ID: 6b562f4a-499e-4885-b98e-d0e485637cb4
+    - ID: 38e69b2b-c4c8-49b2-8a34-5373631df33d
       Name: HeightTexture
     - ID: de2bddab-4963-4b4a-a78b-3e87d21acdf7
       Name: NormalTexture

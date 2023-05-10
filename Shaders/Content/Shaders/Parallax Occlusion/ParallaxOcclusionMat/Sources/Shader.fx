@@ -74,7 +74,7 @@
 	{ 
 		// number of depth layers
 		const float minLayers = 8;
-		const float maxLayers = 32;
+		const float maxLayers = 16;
 		float numLayers = lerp(maxLayers, minLayers, abs(dot(float3(0.0, 0.0, 1.0), viewDir)));  
 		// calculate the size of each layer
 		float layerDepth = 1.0 / numLayers;
