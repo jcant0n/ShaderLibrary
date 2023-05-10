@@ -69,16 +69,60 @@
 		return output;
 	}
 
+
+	float2 ParallaxMapping(float2 texCoords, float3 viewDir)
+	{ 
+		// number of depth layers
+		const float minLayers = 8;
+		const float maxLayers = 32;
+		float numLayers = lerp(maxLayers, minLayers, abs(dot(float3(0.0, 0.0, 1.0), viewDir)));  
+		// calculate the size of each layer
+		float layerDepth = 1.0 / numLayers;
+		// depth of current layer
+		float currentLayerDepth = 0.0;
+		// the amount to shift the texture coordinates per layer (from vector P)
+		float2 P = viewDir.xy / viewDir.z * heightScale; 
+		float2 deltaTexCoords = P / numLayers;
+		
+		// get initial values
+		float2  currentTexCoords     = texCoords;
+		float currentDepthMapValue = HeightTexture.Sample(TextureSampler, currentTexCoords).r;
+		
+		[loop]
+		while(currentLayerDepth < currentDepthMapValue)
+		{
+		    // shift texture coordinates along direction of P
+		    currentTexCoords -= deltaTexCoords;
+		    // get depthmap value at current texture coordinates
+		    currentDepthMapValue = HeightTexture.Sample(TextureSampler, currentTexCoords).r;
+		    // get depth of next layer
+		    currentLayerDepth += layerDepth;  
+		}
+		
+		// get texture coordinates before collision (reverse operations)
+		float2 prevTexCoords = currentTexCoords + deltaTexCoords;
+		
+		// get depth after and before collision for linear interpolation
+		float afterDepth  = currentDepthMapValue - currentLayerDepth;
+		float beforeDepth = HeightTexture.Sample(TextureSampler, prevTexCoords).r - currentLayerDepth + layerDepth;
+		
+		// interpolation of texture coordinates
+		float weight = afterDepth / (afterDepth - beforeDepth);
+		float2 finalTexCoords = prevTexCoords * weight + currentTexCoords * (1.0 - weight);
+		
+		return finalTexCoords;
+	}
+
 	float4 PS(PS_IN input) : SV_Target
 	{
-		float h = HeightTexture.Sample(TextureSampler, input.Tex).r;
-		
 		float3 viewDir = normalize(input.viewPos - input.pixelPos);		
-		float2 offset = (h * heightScale - (heightScale / 2.0)) * (viewDir.xy / viewDir.z);
 		
-		float2 uv = input.Tex + offset;
-		float3 diffuse = DiffuseTexture.Sample(TextureSampler, uv).rgb;
-		float3 normal = NormalTexture.Sample(TextureSampler, uv).rgb;
+		float2 texCoords = ParallaxMapping(input.Tex, viewDir);
+		if(texCoords.x > 1.0 || texCoords.y > 1.0 || texCoords.x < 0.0 || texCoords.y < 0.0)
+        	discard;
+        
+		float3 diffuse = DiffuseTexture.Sample(TextureSampler, texCoords).rgb;
+		float3 normal = NormalTexture.Sample(TextureSampler, texCoords).rgb;
 		normal = normalize(normal * 2.0 - 1.0);
 		
 		// Diffuse Light

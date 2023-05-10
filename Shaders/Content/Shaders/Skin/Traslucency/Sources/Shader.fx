@@ -23,7 +23,8 @@
 		float iLTPower			: packoffset(c2.y); [Default(1)]
 		float fLTScale			: packoffset(c2.z); [Default(1)]
 		float fLTAmbient		: packoffset(c2.w); [Default(0.02)]
-		float3 SSColor			: packoffset(c3.x); [Default(0.6, 0.2, 0.2)]
+		float3 SSColor			: packoffset(c3.x); [Default(0.9, 0.26, 0.23)]
+		float3 baseColor		: packoffset(c4.x); [Default(0.5, 0.19, 0.13)]
 	};
 
 	Texture2D BaseTexture				: register(t0);
@@ -132,7 +133,8 @@
 
 	float4 PS(PS_IN input) : SV_Target
 	{
-		float3 base = BaseTexture.Sample(TextureSampler, input.Tex).rgb;		
+		//float3 base = BaseTexture.Sample(TextureSampler, input.Tex).rgb;
+		float3 base = baseColor;
 		float2 mrTexture = MetalRoughnessTexture.Sample(TextureSampler, input.Tex).xy;
 		float3 emission = EmissiveTexture.Sample(TextureSampler, input.Tex).rgb;
 		float fLTThickness = TraslucencyTexture.Sample(TextureSampler, input.Tex).r;

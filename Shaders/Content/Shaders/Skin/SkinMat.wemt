@@ -6,7 +6,7 @@ DefaultProfile:
   Platform: Undefined
 ExportAsRaw: false
 MaterialInfo:
-  Id: 565edcf1-af54-43d3-9d33-11dd65477f09
+  Id: fa2cef7b-d13e-4885-8a61-42ba5e7d98ec
   ActiveDirectives: []
   AllowInstancing: false
   EffectID: dc835231-e656-4a26-af22-656ac808e903
@@ -54,7 +54,10 @@ MaterialInfo:
       ValueByteArray: 61E4PQ==
     - Name: SSColor
       Type: Evergine.Mathematics.Vector3,Evergine.Mathematics
-      ValueByteArray: Xo/CPs3MTD7NzEw+
+      ValueByteArray: ZmZmP7gehT4fhWs+
+    - Name: baseColor
+      Type: Evergine.Mathematics.Vector3,Evergine.Mathematics
+      ValueByteArray: AAAAP1yPQj64HgU+
   Samplers:
     - ID: 00000000-0000-0000-0000-000000000000
       Name: null
