@@ -6,7 +6,7 @@ DefaultProfile:
   Platform: Undefined
 ExportAsRaw: false
 MaterialInfo:
-  Id: fa2cef7b-d13e-4885-8a61-42ba5e7d98ec
+  Id: 8883481e-c541-4810-b881-8a861f973ed9
   ActiveDirectives: []
   AllowInstancing: false
   EffectID: dc835231-e656-4a26-af22-656ac808e903
@@ -39,7 +39,7 @@ MaterialInfo:
       ValueByteArray: mpmZPg==
     - Name: irradiPerp
       Type: System.Single
-      ValueByteArray: AAAAQA==
+      ValueByteArray: AACAPw==
     - Name: fLTDistortion
       Type: System.Single
       ValueByteArray: AACAPw==

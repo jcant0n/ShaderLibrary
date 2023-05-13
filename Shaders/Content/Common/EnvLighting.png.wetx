@@ -1,5 +1,5 @@
 !Evergine.Assets.Exporters.TextureMetaFile,Evergine.Assets
-Id: 777794a2-5c02-431e-a0a3-e2d91d746746
+Id: cd9fdd7f-0da9-443c-853a-0de35c0e5c9a
 DefaultProfile:
   ExcludeAsset: false
   ExportedItem: null
@@ -18,11 +18,11 @@ Profiles: {}
 SamplerID: 00000000-0000-0000-0000-000000000000
 Source:
   Header:
-    Id: f5ac8cad-9888-4fbf-9524-73285e2ddedb
+    Id: be09d852-6cd9-4cec-a6a7-3a3236e09f3a
     IsCompressed: true
   LastModified: 0001-01-01T00:00:00.0000000
   TextureInfo:
-    Id: 5f55f2cf-ae78-4560-a434-60741bddcb28
+    Id: 9c31afca-ee9a-4f3d-a402-3e5643052d5b
     Description:
       ArraySize: 1
       CpuAccess: None

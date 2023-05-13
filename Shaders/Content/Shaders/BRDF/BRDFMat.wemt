@@ -6,7 +6,7 @@ DefaultProfile:
   Platform: Undefined
 ExportAsRaw: false
 MaterialInfo:
-  Id: ca3dc11f-4705-463e-916d-c5ebba639ea4
+  Id: 3a461502-03b5-4856-8664-1dc9a7e2b171
   ActiveDirectives: []
   AllowInstancing: false
   EffectID: f73ed7cc-78fe-4ab9-a944-c0bf67dff936
@@ -39,7 +39,7 @@ MaterialInfo:
       ValueByteArray: mpmZPg==
     - Name: irradiPerp
       Type: System.Single
-      ValueByteArray: AAAgQQ==
+      ValueByteArray: AACgQA==
   Samplers:
     - ID: 9018edf8-ea96-4721-bf83-5561942432e0
       Name: TextureSampler

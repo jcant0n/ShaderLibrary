@@ -1,15 +1,15 @@
 !Evergine.Assets.Exporters.MaterialMetaFile,Evergine.Assets
-Id: cdca01fe-0d90-485c-a12c-2cb2020c281c
+Id: 7feab40d-b05e-40b7-8610-8247d1966275
 DefaultProfile:
   ExcludeAsset: false
   Name: null
   Platform: Undefined
 ExportAsRaw: false
 MaterialInfo:
-  Id: 64b36490-0941-41e7-9f0f-a00dfc1413a3
+  Id: 9164e710-505b-4728-81d4-362b95313788
   ActiveDirectives: []
   AllowInstancing: false
-  EffectID: b0c45659-2239-4490-a654-3c2eb2074b4c
+  EffectID: dee7f449-8ed6-4a9d-9f8a-f4ead2cb6a67
   Layer: 0db59561-b3f5-444f-b5de-e62e3a5b42bf
   OrderBias: 0
   Parameters:
@@ -19,28 +19,21 @@ MaterialInfo:
     - Name: World
       Type: Evergine.Mathematics.Matrix4x4,Evergine.Mathematics
       ValueByteArray: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==
-    - Name: AmbientColor
-      Type: Evergine.Mathematics.Vector3,Evergine.Mathematics
-      ValueByteArray: zcxMPs3MTD7NzEw+
-    - Name: irradiPerp
-      Type: System.Single
-      ValueByteArray: AACAPw==
     - Name: CameraPosition
       Type: Evergine.Mathematics.Vector3,Evergine.Mathematics
       ValueByteArray: AAAAAAAAAAAAAAAA
+    - Name: DiffusePower
+      Type: System.Single
+      ValueByteArray: MzMzPw==
     - Name: SpecularPower
       Type: System.Single
-      ValueByteArray: mpmZPg==
-    - Name: lightPosition
-      Type: Evergine.Mathematics.Vector3,Evergine.Mathematics
-      ValueByteArray: AAAAAAAAAAAAAIA/
-    - Name: Shininess
-      Type: System.Single
-      ValueByteArray: AAAQQg==
+      ValueByteArray: zcxMPg==
   Samplers:
     - ID: 9018edf8-ea96-4721-bf83-5561942432e0
       Name: TextureSampler
   Textures:
-    - ID: 801c85e7-12dd-4851-a999-91c4898734bf
-      Name: DiffuseTexture
+    - ID: 567ce193-a1e3-490a-8162-584a9c1fba4c
+      Name: DiffuseImportanceSampling
+    - ID: 142840fc-48ac-45e9-89de-63796c160372
+      Name: SpecularImportanceSampling
 Profiles: {}
