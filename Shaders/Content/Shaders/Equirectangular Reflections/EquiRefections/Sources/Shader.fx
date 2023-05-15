@@ -24,28 +24,26 @@
 	
 	struct VS_IN
 	{
-		float4 Position : POSITION;
-		float3 Normal	: NORMAL;
-		float2 TexCoord : TEXCOORD;
+		float4 Position : POSITION0;
+		float3 Normal	: NORMAL0;
+		float2 TexCoord : TEXCOORD0;
 	};
 
 	struct PS_IN
 	{
-		float4 pos : SV_POSITION;
-		float3 Nor	: NORMAL;
-		float2 Tex : TEXCOORD0;
-		float3 posw : TEXCOORD1;
+		float4 Position		: SV_POSITION;
+		float3 CameraVector	: TEXCOORD0;
+		float3 NormalWS		: TEXCOORD1;
 	};
 
 	PS_IN VS(VS_IN input)
 	{
 		PS_IN output = (PS_IN)0;
 
-		output.pos = mul(input.Position, WorldViewProj);
-		output.posw = mul(input.Position, World).xyz;
-
-		output.Nor = mul(float4(input.Normal, 0), World).xyz;
-		output.Tex = input.TexCoord;
+		output.Position = mul(input.Position, WorldViewProj);	
+		float3 positionWS = mul(input.Position, World).xyz;
+		output.CameraVector = CameraPosition -  positionWS;	
+		output.NormalWS = mul(input.Normal, (float3x3)World);
 
 		return output;
 	}
@@ -63,11 +61,11 @@
 	
 	float4 PS(PS_IN input) : SV_Target
 	{
-		float3 viewVector = normalize(input.posw - CameraPosition);
-		float3 normal = normalize(input.Nor);
-		float3 reflectVec = normalize(reflect(viewVector, normal));
+		float3 nomalizedCameraVector = normalize(-input.CameraVector);
+		float3 normal = normalize(input.NormalWS);
+		float3 reflectDir = normalize(reflect(nomalizedCameraVector, normal));
 
-		float2 uv = DirectionToEquirectangular(reflectVec);
+		float2 uv = DirectionToEquirectangular(reflectDir);
 		float3 env = EnvironmentTexture.Sample(TextureSampler, uv);
 	
 		return float4(env ,1);
