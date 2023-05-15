@@ -9,8 +9,12 @@
 	cbuffer PerCamera : register(b1)
 	{
 		float3 CameraPosition		: packoffset(c0.x); [CameraPosition]
-		float DiffusePower			: packoffset(c1.x); [Default(0.7)]
-		float SpecularPower			: packoffset(c1.y); [Default(0.2)]
+	}
+	
+	cbuffer Parameters : register(b2)
+	{
+		float DiffusePower			: packoffset(c0.x); [Default(0.7)]
+		float SpecularPower			: packoffset(c0.y); [Default(0.2)]
 	}
 
 	Texture2D DiffuseImportanceSampling		: register(t0);

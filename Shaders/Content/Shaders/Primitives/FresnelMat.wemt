@@ -1,0 +1,30 @@
+!Evergine.Assets.Exporters.MaterialMetaFile,Evergine.Assets
+Id: dde6ae74-967e-44f6-8e24-19bc52c0df37
+DefaultProfile:
+  ExcludeAsset: false
+  Name: null
+  Platform: Undefined
+ExportAsRaw: false
+MaterialInfo:
+  Id: 99d43542-b4d1-40b0-849c-dba9d28c09b8
+  ActiveDirectives: []
+  AllowInstancing: false
+  EffectID: 487c9f1c-1567-4869-a459-9dad9ef46570
+  Layer: 0db59561-b3f5-444f-b5de-e62e3a5b42bf
+  OrderBias: 0
+  Parameters:
+    - Name: WorldViewProj
+      Type: Evergine.Mathematics.Matrix4x4,Evergine.Mathematics
+      ValueByteArray: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==
+    - Name: World
+      Type: Evergine.Mathematics.Matrix4x4,Evergine.Mathematics
+      ValueByteArray: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==
+    - Name: CameraPosition
+      Type: Evergine.Mathematics.Vector3,Evergine.Mathematics
+      ValueByteArray: AAAAAAAAAAAAAAAA
+    - Name: FresnelExponent
+      Type: System.Single
+      ValueByteArray: haR4QQ==
+  Samplers: null
+  Textures: null
+Profiles: {}

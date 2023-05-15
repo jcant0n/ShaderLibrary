@@ -1,0 +1,11 @@
+!Evergine.Assets.Exporters.EffectMetaFile,Evergine.Assets
+Id: 37fe9d66-07a2-486c-9f77-4f04d457a09c
+DefaultProfile:
+  Compile: ByPlatform
+  ExcludeAsset: false
+  GraphicsBackend: ByPlatform
+  MandatoryCombinations: null
+  Name: null
+  Platform: Undefined
+ExportAsRaw: false
+Profiles: {}
