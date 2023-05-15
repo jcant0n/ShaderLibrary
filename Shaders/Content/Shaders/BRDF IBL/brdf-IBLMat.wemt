@@ -1,0 +1,64 @@
+!Evergine.Assets.Exporters.MaterialMetaFile,Evergine.Assets
+Id: 5fadc464-579e-428e-9987-f6865604fdec
+DefaultProfile:
+  ExcludeAsset: false
+  Name: null
+  Platform: Undefined
+ExportAsRaw: false
+MaterialInfo:
+  Id: db80c0b3-f252-48be-9bbd-0011f8b16164
+  ActiveDirectives: []
+  AllowInstancing: false
+  EffectID: ad4c20f0-8dfe-4f90-9f9d-62f3440c3160
+  Layer: 0db59561-b3f5-444f-b5de-e62e3a5b42bf
+  OrderBias: 0
+  Parameters:
+    - Name: WorldViewProj
+      Type: Evergine.Mathematics.Matrix4x4,Evergine.Mathematics
+      ValueByteArray: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==
+    - Name: World
+      Type: Evergine.Mathematics.Matrix4x4,Evergine.Mathematics
+      ValueByteArray: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==
+    - Name: CameraPosition
+      Type: Evergine.Mathematics.Vector3,Evergine.Mathematics
+      ValueByteArray: AAAAAAAAAAAAAAAA
+    - Name: LightPosition
+      Type: Evergine.Mathematics.Vector3,Evergine.Mathematics
+      ValueByteArray: xPUov7jMzD0AAABA
+    - Name: ambientFactor
+      Type: System.Single
+      ValueByteArray: CtejPA==
+    - Name: Metallic
+      Type: System.Single
+      ValueByteArray: IIVrPw==
+    - Name: Roughness
+      Type: System.Single
+      ValueByteArray: HoXrPQ==
+    - Name: Reflectance
+      Type: System.Single
+      ValueByteArray: AACAPw==
+    - Name: irradiPerp
+      Type: System.Single
+      ValueByteArray: AAAAQA==
+    - Name: mipCount
+      Type: System.Single
+      ValueByteArray: AADAQA==
+  Samplers:
+    - ID: 9018edf8-ea96-4721-bf83-5561942432e0
+      Name: TextureSampler
+  Textures:
+    - ID: 8b1d459c-c433-4ee3-bfe5-b45fbce12736
+      Name: BaseTexture
+    - ID: 00000000-0000-0000-0000-000000000000
+      Name: null
+    - ID: 00000000-0000-0000-0000-000000000000
+      Name: null
+    - ID: 00000000-0000-0000-0000-000000000000
+      Name: null
+    - ID: 2cdef147-9750-453a-9ee5-25884033ec64
+      Name: RadianceTexture
+    - ID: 21408048-9a11-4e8b-9cf8-77eb61cc7668
+      Name: IrradianceTexture
+    - ID: 98859458-31a7-4b50-835e-01ac072fc45e
+      Name: BRDFIntegrationTexture
+Profiles: {}
