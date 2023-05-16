@@ -26,8 +26,8 @@
 	Texture2D MetalRoughnessTexture		: register(t1);
 	Texture2D NormalTexture				: register(t2);
 	Texture2D EmissiveTexture			: register(t3);
-	Texture2D RadianceTexture			: register(t4);
-	Texture2D IrradianceTexture			: register(t5);
+	Texture2D RadianceTexture			: register(t4); // Generated with cmftStudio
+	Texture2D IrradianceTexture			: register(t5); // Generated with cmftStudio
 	Texture2D BRDFIntegrationTexture	: register(t6);
 	SamplerState TextureSampler			: register(s0);
 	
