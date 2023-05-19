@@ -1,15 +1,15 @@
 !Evergine.Assets.Exporters.MaterialMetaFile,Evergine.Assets
-Id: 594e7cb6-1b4e-4020-8737-4c6892f48eb2
+Id: 9f62e86f-b18c-4230-b6d9-5f2bf172c7af
 DefaultProfile:
   ExcludeAsset: false
   Name: null
   Platform: Undefined
 ExportAsRaw: false
 MaterialInfo:
-  Id: 64e56918-f63b-4a47-b138-f12ff902d028
+  Id: 84027b0f-32a7-4cae-9a53-6c86fa6d77d7
   ActiveDirectives: []
   AllowInstancing: false
-  EffectID: 6b9f5ec1-b31f-4d91-a0f3-0a890f8d6677
+  EffectID: 195100f6-fd53-4616-94cc-0961a661b524
   Layer: 0db59561-b3f5-444f-b5de-e62e3a5b42bf
   OrderBias: 0
   Parameters:
@@ -22,13 +22,24 @@ MaterialInfo:
     - Name: CameraPosition
       Type: Evergine.Mathematics.Vector3,Evergine.Mathematics
       ValueByteArray: AAAAAAAAAAAAAAAA
-    - Name: Tilling
-      Type: Evergine.Mathematics.Vector2,Evergine.Mathematics
-      ValueByteArray: AACAPwAAgD8=
+    - Name: Amount
+      Type: System.Single
+      ValueByteArray: zcxMPg==
+    - Name: BoxMax
+      Type: Evergine.Mathematics.Vector3,Evergine.Mathematics
+      ValueByteArray: AACYQHE9Cj8AAKC/
+    - Name: BoxMin
+      Type: Evergine.Mathematics.Vector3,Evergine.Mathematics
+      ValueByteArray: AACIQArXIz0AAOC/
+    - Name: CubeMapPos
+      Type: Evergine.Mathematics.Vector3,Evergine.Mathematics
+      ValueByteArray: AACQQOJ6lD4AAMC/
   Samplers:
     - ID: 9018edf8-ea96-4721-bf83-5561942432e0
       Name: TextureSampler
   Textures:
+    - ID: a69c1115-439c-40b9-8e71-f4640d2eeb93
+      Name: AlbedoTexture
     - ID: e5304d10-3610-4a60-9dc0-0fddcccbaf4e
       Name: CubeTexture
 Profiles: {}

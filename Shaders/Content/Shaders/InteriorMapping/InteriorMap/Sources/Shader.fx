@@ -12,7 +12,7 @@
 		float2 Tilling				: packoffset(c1.x); [Default(1,1)]
 	}
 
-	TextureCube cubeTexture			: register(t0);
+	TextureCube CubeTexture			: register(t0);
 	SamplerState TextureSampler		: register(s0);
 
 [End_ResourceLayout]
@@ -43,7 +43,7 @@
 		output.position = mul(input.position, WorldViewProj);
 		float3 posw = mul(input.position, World).xyz;
 		
-		float3 T = input.tangent;
+		float3 T = input.tangent.xyz;
 		float3 N = input.normal;
 		float3 B = cross(N, T) * input.tangent.w;
 		
@@ -79,7 +79,7 @@
 		float2 uv = input.texCoord;
 		float3 sampleDir = InteriorCubemap(uv, Tilling, normalize(input.viewDirTangent));
 		
-		float3 color = cubeTexture.Sample(TextureSampler, sampleDir).xyz;
+		float3 color = CubeTexture.Sample(TextureSampler, sampleDir).xyz;
 		return float4(color, 1.0);
 	}
 
