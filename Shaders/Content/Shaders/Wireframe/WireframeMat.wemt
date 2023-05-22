@@ -1,0 +1,30 @@
+!Evergine.Assets.Exporters.MaterialMetaFile,Evergine.Assets
+Id: 49f13141-c7d6-47e0-98b8-13f7a26664fd
+DefaultProfile:
+  ExcludeAsset: false
+  Name: null
+  Platform: Undefined
+ExportAsRaw: false
+MaterialInfo:
+  Id: 0b1e339c-59f8-4568-bb7b-041db2ac1b7d
+  ActiveDirectives: []
+  AllowInstancing: false
+  EffectID: b38ed668-ea2e-428a-b94b-87d98ac1c5ba
+  Layer: 0db59561-b3f5-444f-b5de-e62e3a5b42bf
+  OrderBias: 0
+  Parameters:
+    - Name: WorldViewProj
+      Type: Evergine.Mathematics.Matrix4x4,Evergine.Mathematics
+      ValueByteArray: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==
+    - Name: Color
+      Type: Evergine.Mathematics.Vector3,Evergine.Mathematics
+      ValueByteArray: mpmZPpqZmT6amZk+
+    - Name: WireframeSmoothing
+      Type: System.Single
+      ValueByteArray: AACAPw==
+    - Name: WireframeThickness
+      Type: System.Single
+      ValueByteArray: zczMPQ==
+  Samplers: null
+  Textures: null
+Profiles: {}

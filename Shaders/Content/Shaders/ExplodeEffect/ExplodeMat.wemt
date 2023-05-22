@@ -1,0 +1,33 @@
+!Evergine.Assets.Exporters.MaterialMetaFile,Evergine.Assets
+Id: ce13c93b-cd50-4fbb-bca9-4646e1870b13
+DefaultProfile:
+  ExcludeAsset: false
+  Name: null
+  Platform: Undefined
+ExportAsRaw: false
+MaterialInfo:
+  Id: 991aee56-4303-4861-bf90-5795b69edd66
+  ActiveDirectives: []
+  AllowInstancing: false
+  EffectID: 305e5182-b2c8-42fc-944d-2476e1c4cb6d
+  Layer: 0db59561-b3f5-444f-b5de-e62e3a5b42bf
+  OrderBias: 0
+  Parameters:
+    - Name: WorldViewProj
+      Type: Evergine.Mathematics.Matrix4x4,Evergine.Mathematics
+      ValueByteArray: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==
+    - Name: World
+      Type: Evergine.Mathematics.Matrix4x4,Evergine.Mathematics
+      ValueByteArray: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==
+    - Name: Color
+      Type: Evergine.Mathematics.Vector3,Evergine.Mathematics
+      ValueByteArray: AACAPwAAgD8AAAAA
+    - Name: ExplosionFactor
+      Type: System.Single
+      ValueByteArray: zczMPg==
+    - Name: Time
+      Type: System.Single
+      ValueByteArray: AAAAAA==
+  Samplers: null
+  Textures: null
+Profiles: {}

@@ -72,6 +72,7 @@
 		float3 vreflect = reflect(viewDir, input.normal);
 		float3 sampleDir = ParallaxCorrectNormal(input.posw, vreflect, BoxMax, BoxMin, CubeMapPos);
 		float3 reflection = CubeTexture.Sample(TextureSampler, sampleDir).xyz;
+		
 		float3 base = AlbedoTexture.Sample(TextureSampler, input.texCoord).xyz;
 		float3 color = lerp(base, reflection, Amount);
 		return float4(color, 1.0);
