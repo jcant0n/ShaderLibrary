@@ -4,7 +4,7 @@
 
 ## Introduction
 
-This is a collection of shaders written in HLSL using Evergine. The library provides a variety of shader effects to enhance the visual quality of your graphics applications. It includes implementations of popular effects such as Blinn-Phong, BRDF Microfacet, BRDF + IBL, IBL, Equirectangular Reflections, TextureCube Reflections, Fur shells, Explode Effect, Extrude Pyramid, Extrude Triangles, Flat shading, Fresnel, Interior Mapping, Parallax Corrected Cube Mapping, Normal Mapping, Parallax Mapping, Parallax Occlusion Mapping, Toon shading, Translucency Shading, Vertex Normals GS, and Wireframe GS.
+This is a collection of shaders written in HLSL using Evergine. The library provides a variety of shader effects to enhance the visual quality of your graphics applications. It includes implementations of popular effects such as Blinn-Phong, BRDF Microfacet, BRDF + IBL, IBL, etc.
 
 ## Shaders
 
@@ -29,6 +29,33 @@ This is a collection of shaders written in HLSL using Evergine. The library prov
 - **Translucency Shading**: Simulates light passing through translucent materials for realistic rendering.
 - **Vertex Normals GS**: Calculates vertex normals in the Geometry Shader stage for improved shading accuracy.
 - **Wireframe GS**: Renders objects as wireframes using the Geometry Shader stage.
+
+## Screenshots
+
+Here are some screenshots showcasing the shader effects in action:
+
+![Blinn-Phong](https://github.com/jcant0n/ShaderLibrary/raw/main/Screenshots/BlinnPhong.png)
+![BRDF Microfacet](https://github.com/jcant0n/ShaderLibrary/raw/main/Screenshots/BRDF.png)
+![BRDF + IBL](https://github.com/jcant0n/ShaderLibrary/raw/main/Screenshots/BRDF_IBL.png)
+![Equirectangular Reflections](https://github.com/jcant0n/ShaderLibrary/raw/main/Screenshots/EquirectangularReflections.png)
+![Explode Effect](https://github.com/jcant0n/ShaderLibrary/raw/main/Screenshots/ExplodeEffectGS.png)
+![Extrude Pyramid](https://github.com/jcant0n/ShaderLibrary/raw/main/Screenshots/ExtrudePyramidGS.png)
+![Extrude Triangles](https://github.com/jcant0n/ShaderLibrary/raw/main/Screenshots/ExtrudeTriangleGS.png)
+![Flat Shading](https://github.com/jcant0n/ShaderLibrary/raw/main/Screenshots/FlatShadingDD.png)
+![Flat Shading](https://github.com/jcant0n/ShaderLibrary/raw/main/Screenshots/FlatShadingGS.png)
+![Fresnel](https://github.com/jcant0n/ShaderLibrary/raw/main/Screenshots/Fresnel.png)
+![Fur Shells](https://github.com/jcant0n/ShaderLibrary/raw/main/Screenshots/FurGS.png)
+![IBL](https://github.com/jcant0n/ShaderLibrary/raw/main/Screenshots/IBL.png)
+![Interior Mapping](https://github.com/jcant0n/ShaderLibrary/raw/main/Screenshots/InteriorMapping.png)
+![Normal Mapping](https://github.com/jcant0n/ShaderLibrary/raw/main/Screenshots/NormalMapping.png)
+![Parallax Corrected Cube Mapping](https://github.com/jcant0n/ShaderLibrary/raw/main/Screenshots/ParallaxCorrectedCubeMap.png)
+![Parallax Mapping](https://github.com/jcant0n/ShaderLibrary/raw/main/Screenshots/ParallaxMapping.png)
+![Parallax Occlusion Mapping](https://github.com/jcant0n/ShaderLibrary/raw/main/Screenshots/ParallaxOcclusionMapping.png)
+![TextureCube Reflections](https://github.com/jcant0n/ShaderLibrary/raw/main/Screenshots/TextureCube%20Reflections.png)
+![Toon Shading](https://github.com/jcant0n/ShaderLibrary/raw/main/Screenshots/ToonShading.png)
+![Translucency Shading](https://github.com/jcant0n/ShaderLibrary/raw/main/Screenshots/Traslucency.png)
+![Vertex Normals GS](https://github.com/jcant0n/ShaderLibrary/raw/main/Screenshots/VertexNormals.png)
+![Wireframe GS](https://github.com/jcant0n/ShaderLibrary/raw/main/Screenshots/WireFrameGS.png)
 
 ## Requirements
 
