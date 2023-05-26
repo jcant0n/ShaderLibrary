@@ -31,7 +31,7 @@ namespace Shaders
             var assetsService = this.Container.Resolve<AssetsService>();
 
             // Navigate to scene
-            var scene = assetsService.Load<MyScene>(EvergineContent.Scenes.MyScene_wescene);
+            var scene = assetsService.Load<MyScene>(EvergineContent.Scenes.LightingTechniques_wescene);
             ScreenContext screenContext = new ScreenContext(scene);
             screenContextManager.To(screenContext);
         }
