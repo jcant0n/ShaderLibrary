@@ -46,7 +46,7 @@
 
 		output.pos = mul(input.position, WorldViewProj);
 		output.posw = mul(input.position, World).xyz;
-		output.normal = input.normal;
+		output.normal = mul(float4(input.normal, 0), World).xyz;
 		output.Tex = input.texCoord;
 
 		return output;
