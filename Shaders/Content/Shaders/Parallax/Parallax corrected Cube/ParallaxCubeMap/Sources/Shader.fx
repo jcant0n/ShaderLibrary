@@ -34,9 +34,9 @@
 
 	struct PS_IN
 	{
-		float4 pos 			: SV_POSITION;
+		float4 position 	: SV_POSITION;
 		float3 normal		: NORMAL0;
-		float3 posw			: TEXCOORD0;
+		float3 positionWS	: TEXCOORD0;
 		float2 texCoord		: TEXCOORD1;
 	};
 
@@ -44,8 +44,8 @@
 	{
 		PS_IN output = (PS_IN)0;
 
-		output.pos = mul(input.position, WorldViewProj);
-		output.posw = mul(input.position, World).xyz;
+		output.position = mul(input.position, WorldViewProj);
+		output.positionWS = mul(input.position, World).xyz;
 		output.normal = input.normal;
 		output.texCoord = input.texCoord;
 		
@@ -68,9 +68,9 @@
 
 	float4 PS(PS_IN input) : SV_Target
 	{
-		float3 viewDir = input.posw - CameraPosition;
+		float3 viewDir = normalize(input.positionWS - CameraPosition);
 		float3 vreflect = reflect(viewDir, input.normal);
-		float3 sampleDir = ParallaxCorrectNormal(input.posw, vreflect, BoxMax, BoxMin, CubeMapPos);
+		float3 sampleDir = ParallaxCorrectNormal(input.positionWS, vreflect, BoxMax, BoxMin, CubeMapPos);
 		float3 reflection = CubeTexture.Sample(TextureSampler, sampleDir).xyz;
 		
 		float3 base = AlbedoTexture.Sample(TextureSampler, input.texCoord).xyz;

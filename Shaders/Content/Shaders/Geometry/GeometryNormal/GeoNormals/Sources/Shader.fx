@@ -19,27 +19,27 @@
 
 	struct VS_IN
 	{
-		float4 Position : POSITION;
-		float3 Normal	: NORMAL;
+		float4 position : POSITION;
+		float3 normal	: NORMAL;
 	};
 
 	struct GS_IN
 	{
-		float4 pos : SV_POSITION;
-		float3 Nor	: NORMAL;
+		float4 position : SV_POSITION;
+		float3 normal	: NORMAL;
 	};
 	
 	struct PS_IN
 	{
-		float4 pos : SV_POSITION;		
+		float4 position : SV_POSITION;		
 	};
 	
 	GS_IN VS(VS_IN input)
 	{
 		GS_IN output = (GS_IN)0;
 
-		output.pos = input.Position;
-		output.Nor = input.Normal;
+		output.position = input.position;
+		output.normal = input.normal;
 
 		return output;
 	}
@@ -51,13 +51,13 @@
 		
 		for(int i = 0; i < 2; i++)
 		{
-			float3 P = input[i].pos.xyz;
-			float3 N = input[i].Nor;
+			float3 P = input[i].position.xyz;
+			float3 N = input[i].normal;
 			
-			v.pos = mul(float4(P, 1.0), WorldViewProj);
+			v.position = mul(float4(P, 1.0), WorldViewProj);
 			outputStream.Append(v);
 
-			v.pos = mul(float4(P + (N * NormalLength), 1.0), WorldViewProj);
+			v.position = mul(float4(P + (N * NormalLength), 1.0), WorldViewProj);
 			outputStream.Append(v);
 
 			outputStream.RestartStrip();

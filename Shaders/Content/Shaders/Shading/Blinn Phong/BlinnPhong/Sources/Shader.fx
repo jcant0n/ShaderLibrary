@@ -34,20 +34,20 @@
 
 	struct PS_IN
 	{
-		float4 pos 			: SV_POSITION;
+		float4 position 	: SV_POSITION;
 		float3 normal		: NORMAL0;
-		float2 Tex 			: TEXCOORD0;
-		float3 posw 		: TEXCOORD1;
+		float2 texCoord 	: TEXCOORD0;
+		float3 positionWS 		: TEXCOORD1;
 	};
 
 	PS_IN VS(VS_IN input)
 	{
 		PS_IN output = (PS_IN)0;
 
-		output.pos = mul(input.position, WorldViewProj);
-		output.posw = mul(input.position, World).xyz;
+		output.position = mul(input.position, WorldViewProj);
+		output.positionWS = mul(input.position, World).xyz;
 		output.normal = mul(float4(input.normal, 0), World).xyz;
-		output.Tex = input.texCoord;
+		output.texCoord = input.texCoord;
 
 		return output;
 	}
@@ -63,9 +63,9 @@
 
 	float4 PS(PS_IN input) : SV_Target
 	{
-		float3 diffuseColor = DiffuseTexture.Sample(TextureSampler, input.Tex).rgb;
-		float3 lightDir = normalize(lightPosition - input.posw);
-		float3 viewDir = normalize(CameraPosition - input.posw);
+		float3 diffuseColor = DiffuseTexture.Sample(TextureSampler, input.texCoord).rgb;
+		float3 lightDir = normalize(lightPosition - input.positionWS);
+		float3 viewDir = normalize(CameraPosition - input.positionWS);
 		float3 normal = normalize(input.normal);
 		
     	float3 radiance = AmbientColor;

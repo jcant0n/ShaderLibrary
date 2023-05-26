@@ -20,23 +20,23 @@
 
 	struct PS_IN
 	{
-		float4 pos 		: SV_POSITION;
-		float3 normalWS	: TEXCOORD0;
+		float4 position : SV_POSITION;
+		float3 normal	: TEXCOORD0;
 	};
 
 	PS_IN VS(VS_IN input)
 	{
 		PS_IN output = (PS_IN)0;
 
-		output.pos = mul(input.position, WorldViewProj);
-		output.normalWS = mul(float4(input.normal, 0), World).xyz;
+		output.position = mul(input.position, WorldViewProj);
+		output.normal = mul(float4(input.normal, 0), World).xyz;
 
 		return output;
 	}
 
 	float4 PS(PS_IN input) : SV_Target
 	{
-		return float4(input.normalWS, 1.0);
+		return float4(input.normal, 1.0);
 	}
 
 [End_Pass]

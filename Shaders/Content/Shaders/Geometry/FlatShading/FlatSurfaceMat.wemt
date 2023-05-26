@@ -6,7 +6,7 @@ DefaultProfile:
   Platform: Undefined
 ExportAsRaw: false
 MaterialInfo:
-  Id: fc647c51-10a6-4b50-a4ff-8447bd2b47dd
+  Id: c6118371-c8a9-4fe6-a9ff-9af096707b10
   ActiveDirectives: []
   AllowInstancing: false
   EffectID: ce69286e-86a8-49a5-9381-818a2fc31c73
@@ -21,7 +21,7 @@ MaterialInfo:
       ValueByteArray: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==
     - Name: LightPosition
       Type: Evergine.Mathematics.Vector3,Evergine.Mathematics
-      ValueByteArray: pUdBwArXIz0AAADA
+      ValueByteArray: pUdBwArXIz0AAABA
   Samplers: null
   Textures: null
 Profiles: {}

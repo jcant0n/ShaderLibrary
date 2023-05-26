@@ -6,7 +6,7 @@ DefaultProfile:
   Platform: Undefined
 ExportAsRaw: false
 MaterialInfo:
-  Id: e03ff68a-ebd2-4849-9ce2-8ac2fb2b63a2
+  Id: db0a7efb-192f-42c9-a046-f8eec11f9a25
   ActiveDirectives: []
   AllowInstancing: false
   EffectID: 6f97b8b8-909d-4ed6-bf01-c8437a41a177
@@ -24,7 +24,7 @@ MaterialInfo:
       ValueByteArray: AAAAAAAAAAAAAAAA
     - Name: lightPosition
       Type: Evergine.Mathematics.Vector3,Evergine.Mathematics
-      ValueByteArray: AAAAAAyupz8AAIA/
+      ValueByteArray: AABAwAAAgD+qRwFA
   Samplers:
     - ID: 9018edf8-ea96-4721-bf83-5561942432e0
       Name: TextureSampler

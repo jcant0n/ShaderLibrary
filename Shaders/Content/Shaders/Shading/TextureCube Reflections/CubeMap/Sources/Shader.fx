@@ -24,34 +24,34 @@
 	
 	struct VS_IN
 	{
-		float4 Position : POSITION0;
-		float3 Normal	: NORMAL0;
-		float2 TexCoord : TEXCOORD0;
+		float4 position : POSITION0;
+		float3 normal	: NORMAL0;
+		float2 texCoord : TEXCOORD0;
 	};
 
 	struct PS_IN
 	{
-		float4 Position		: SV_POSITION;
-		float3 CameraVector	: TEXCOORD0;
-		float3 NormalWS		: TEXCOORD1;
+		float4 position		: SV_POSITION;
+		float3 cameraVector	: TEXCOORD0;
+		float3 normal		: TEXCOORD1;
 	};
 
 	PS_IN VS(VS_IN input)
 	{
 		PS_IN output = (PS_IN)0;
 
-		output.Position = mul(input.Position, WorldViewProj);	
-		float3 positionWS = mul(input.Position, World).xyz;
-		output.CameraVector = CameraPosition -  positionWS;	
-		output.NormalWS = mul(input.Normal, (float3x3)World);
+		output.position = mul(input.position, WorldViewProj);	
+		float3 positionWS = mul(input.position, World).xyz;
+		output.cameraVector = CameraPosition -  positionWS;	
+		output.normal = mul(input.normal, (float3x3)World);
 
 		return output;
 	}
 
 	float4 PS(PS_IN input) : SV_Target
 	{
-		float3 nomalizedCameraVector = normalize(input.CameraVector);
-		float3 normal = normalize(input.NormalWS);
+		float3 nomalizedCameraVector = normalize(input.cameraVector);
+		float3 normal = normalize(input.normal);
 		float3 envCoord = reflect(nomalizedCameraVector, normal);
 	
 		return EnvironmentTexture.Sample(TextureSampler, envCoord);

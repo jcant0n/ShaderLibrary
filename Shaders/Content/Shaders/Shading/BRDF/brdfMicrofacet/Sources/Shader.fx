@@ -37,28 +37,28 @@
 	
 	struct VS_IN
 	{
-		float4 Position : POSITION;
-		float3 Normal	: NORMAL;
-		float2 TexCoord : TEXCOORD;
+		float4 position : POSITION;
+		float3 normal	: NORMAL;
+		float2 texCoord : TEXCOORD;
 	};
 
 	struct PS_IN
 	{
-		float4 pos : SV_POSITION;
-		float3 Nor	: NORMAL;
-		float2 Tex : TEXCOORD0;
-		float3 posw : TEXCOORD1;
+		float4 position 	: SV_POSITION;
+		float3 normal		: NORMAL;
+		float2 texCoord 	: TEXCOORD0;
+		float3 positionWS 	: TEXCOORD1;
 	};
 
 	PS_IN VS(VS_IN input)
 	{
 		PS_IN output = (PS_IN)0;
 
-		output.pos = mul(input.Position, WorldViewProj);
+		output.position = mul(input.position, WorldViewProj);
 		
-		output.posw = mul(input.Position, World).xyz;
-		output.Nor = mul(float4(input.Normal, 0), World).xyz;
-		output.Tex = input.TexCoord;
+		output.positionWS = mul(input.position, World).xyz;
+		output.normal = mul(float4(input.normal, 0), World).xyz;
+		output.texCoord = input.texCoord;
 
 		return output;
 	}
@@ -129,13 +129,13 @@
 
 	float4 PS(PS_IN input) : SV_Target
 	{
-		float3 base = BaseTexture.Sample(TextureSampler, input.Tex).rgb;		
-		float2 mrTexture = MetalRoughnessTexture.Sample(TextureSampler, input.Tex).xy;
-		float3 emission = EmissiveTexture.Sample(TextureSampler, input.Tex).rgb;
+		float3 base = BaseTexture.Sample(TextureSampler, input.texCoord).rgb;		
+		float2 mrTexture = MetalRoughnessTexture.Sample(TextureSampler, input.texCoord).xy;
+		float3 emission = EmissiveTexture.Sample(TextureSampler, input.texCoord).rgb;
 		
-		float3 viewDir = normalize(CameraPosition - input.posw);
-		float3 lightDir = normalize(LightPosition - input.posw);
-		float3 normal = normalize(input.Nor);
+		float3 viewDir = normalize(CameraPosition - input.positionWS);
+		float3 lightDir = normalize(LightPosition - input.positionWS);
+		float3 normal = normalize(input.normal);
 		float roughness = Roughness; //mrTexture.x;
 		float metallic = Metallic; //mrTexture.y;
 		float reflectance = Reflectance;

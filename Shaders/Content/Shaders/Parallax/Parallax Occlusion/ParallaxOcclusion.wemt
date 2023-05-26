@@ -6,7 +6,7 @@ DefaultProfile:
   Platform: Undefined
 ExportAsRaw: false
 MaterialInfo:
-  Id: 4ca043fa-de78-419f-bb2b-036a10a5956c
+  Id: c5b5a86b-d22e-437a-90af-59003b298c70
   ActiveDirectives: []
   AllowInstancing: false
   EffectID: 030be622-4248-44cd-94f9-98f5a2b2bbf5
@@ -24,7 +24,7 @@ MaterialInfo:
       ValueByteArray: AAAAAAAAAAAAAAAA
     - Name: lightPosition
       Type: Evergine.Mathematics.Vector3,Evergine.Mathematics
-      ValueByteArray: 5Hp0QClcDz8AAIA/
+      ValueByteArray: AACAPylcDz8AAABA
     - Name: heightScale
       Type: System.Single
       ValueByteArray: j8L1PA==

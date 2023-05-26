@@ -6,7 +6,7 @@ DefaultProfile:
   Platform: Undefined
 ExportAsRaw: false
 MaterialInfo:
-  Id: 84027b0f-32a7-4cae-9a53-6c86fa6d77d7
+  Id: 5f1be74d-552e-4c4d-a13d-6935537998d3
   ActiveDirectives: []
   AllowInstancing: false
   EffectID: 195100f6-fd53-4616-94cc-0961a661b524
@@ -27,13 +27,13 @@ MaterialInfo:
       ValueByteArray: zcxMPg==
     - Name: BoxMax
       Type: Evergine.Mathematics.Vector3,Evergine.Mathematics
-      ValueByteArray: AACYQHE9Cj8AAKC/
+      ValueByteArray: AABQQHE9Cj8AAIA+
     - Name: BoxMin
       Type: Evergine.Mathematics.Vector3,Evergine.Mathematics
-      ValueByteArray: AACIQArXIz0AAOC/
+      ValueByteArray: AAAwQArXIz0AAIC+
     - Name: CubeMapPos
       Type: Evergine.Mathematics.Vector3,Evergine.Mathematics
-      ValueByteArray: AACQQOJ6lD4AAMC/
+      ValueByteArray: AABAQOJ6lD4AAAAA
   Samplers:
     - ID: 9018edf8-ea96-4721-bf83-5561942432e0
       Name: TextureSampler

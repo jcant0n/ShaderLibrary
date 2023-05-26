@@ -31,28 +31,24 @@
 
 	struct VS_IN
 	{
-		float4 Position : POSITION;
-		float3 Normal	: NORMAL;
-		float2 TexCoord : TEXCOORD;
+		float4 position : POSITION;
+		float3 normal	: NORMAL;
 	};
 
 	struct PS_IN
 	{
-		float4 pos : SV_POSITION;
-		float3 Nor	: NORMAL0;
-		float3 posW : TEXCOORD0;
-		float2 Tex : TEXCOORD1;
+		float4 position 	: SV_POSITION;
+		float3 normal		: NORMAL0;
+		float3 positionWS 	: TEXCOORD0;
 	};
 
 	PS_IN VS(VS_IN input)
 	{
 		PS_IN output = (PS_IN)0;
 
-		output.pos = mul(input.Position, WorldViewProj);
-		output.posW = mul(input.Position, World).xyz;
-		output.Nor = mul(float4(input.Normal, 0), World).xyz;
-		
-		output.Tex = input.TexCoord;
+		output.position = mul(input.position, WorldViewProj);
+		output.positionWS = mul(input.position, World).xyz;
+		output.normal = mul(float4(input.normal, 0), World).xyz;
 
 		return output;
 	}
@@ -70,8 +66,8 @@
 	
 	float4 PS(PS_IN input) : SV_Target
 	{
-		float3 viewDir = normalize(CameraPosition - input.posW);
-		float3 normal = normalize(input.Nor);
+		float3 viewDir = normalize(CameraPosition - input.positionWS);
+		float3 normal = normalize(input.normal);
 		float3 reflectDir = reflect(-viewDir, normal);
 		
 		float3 diff = DiffuseImportanceSampling.Sample(TextureSampler, DirectionToEquirectangular(normal)).rgb;

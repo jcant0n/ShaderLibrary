@@ -28,48 +28,48 @@
 
 	struct VS_IN
 	{
-		float4 Position : POSITION;
-		float3 Normal	: NORMAL0;
-		float4 Tangent  : TANGENT0;
-		float2 TexCoord : TEXCOORD;
+		float4 position 	: POSITION;
+		float3 normal		: NORMAL0;
+		float4 tangent  	: TANGENT0;
+		float2 texCoord 	: TEXCOORD;
 	};
 
 	struct PS_IN
 	{
-		float4 pos 		: SV_POSITION;
-		float2 Tex 		: TEXCOORD0;
-		float3 pixelPos : TEXCOORD1;
-		float3 viewPos	: TEXCOORD2;
-		float3 lightPos	: TEXCOORD3;
+		float4 position 	: SV_POSITION;
+		float2 texCoord 	: TEXCOORD0;
+		float3 pixelPos 	: TEXCOORD1;
+		float3 viewPos		: TEXCOORD2;
+		float3 lightPos		: TEXCOORD3;
 	};
 
 	PS_IN VS(VS_IN input)
 	{
 		PS_IN output = (PS_IN)0;
 
-		output.pos = mul(input.Position, WorldViewProj);
-		float3 posw = mul(input.Position, World).xyz;
+		output.position = mul(input.position, WorldViewProj);
+		float3 positionWS = mul(input.position, World).xyz;
 		
-		float3 T = mul(input.Tangent, World).xyz;
-		float3 N = mul(float4(input.Normal, 0), World).xyz;
-		float3 B = cross(T, N) * input.Tangent.w;
+		float3 T = input.tangent;
+		float3 N = input.normal;
+		float3 B = cross(T, N) * input.tangent.w;
 		
 		float3x3 tbn = float3x3( normalize(T),
 								 normalize(B),
 								 normalize(N));
 		
-		output.pixelPos = mul(posw, tbn);
+		output.pixelPos = mul(positionWS, tbn);
 		output.viewPos = mul(CameraPosition, tbn);
 		output.lightPos = mul(lightPosition, tbn);
-		output.Tex = input.TexCoord;
+		output.texCoord = input.texCoord;
 
 		return output;
 	}
 
 	float4 PS(PS_IN input) : SV_Target
 	{
-		float3 diffuse = DiffuseTexture.Sample(TextureSampler, input.Tex).rgb;
-		float3 normal = NormalTexture.Sample(TextureSampler, input.Tex).rgb;
+		float3 diffuse = DiffuseTexture.Sample(TextureSampler, input.texCoord).rgb;
+		float3 normal = NormalTexture.Sample(TextureSampler, input.texCoord).rgb;
 		normal = normalize(normal * 2.0 - 1.0);
 		
 		// Diffuse Light

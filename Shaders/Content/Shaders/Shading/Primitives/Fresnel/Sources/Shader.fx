@@ -26,8 +26,8 @@
 
 	struct PS_IN
 	{
-		float4 pos 			: SV_POSITION;
-		float3 normalWS		: TEXCOORD0;
+		float4 position 	: SV_POSITION;
+		float3 normal		: TEXCOORD0;
 		float3 viewDir		: TEXCOORD1;
 	};
 
@@ -35,17 +35,17 @@
 	{
 		PS_IN output = (PS_IN)0;
 
-		output.pos = mul(input.position, WorldViewProj);
+		output.position = mul(input.position, WorldViewProj);
 		float3 positionWS = mul(input.position, World).xyz;
 		output.viewDir = normalize(CameraPosition - positionWS);
-		output.normalWS = mul(float4(input.normal, 0), World).xyz;
+		output.normal = mul(float4(input.normal, 0), World).xyz;
 
 		return output;
 	}
 
 	float4 PS(PS_IN input) : SV_Target
 	{
-		float3 fresnel = dot(input.normalWS, input.viewDir);
+		float3 fresnel = dot(input.normal, input.viewDir);
 		fresnel = saturate(1 - fresnel);		
 		fresnel = pow(fresnel, FresnelExponent);
 		return float4(fresnel, 1.0);
