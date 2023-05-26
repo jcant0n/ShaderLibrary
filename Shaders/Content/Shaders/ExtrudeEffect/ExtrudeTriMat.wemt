@@ -1,0 +1,33 @@
+!Evergine.Assets.Exporters.MaterialMetaFile,Evergine.Assets
+Id: c88da2eb-5a1b-4938-9c50-021ea65146b2
+DefaultProfile:
+  ExcludeAsset: false
+  Name: null
+  Platform: Undefined
+ExportAsRaw: false
+MaterialInfo:
+  Id: e1d7863e-af1a-4bc3-8c54-9bd97b5fa8e4
+  ActiveDirectives: []
+  AllowInstancing: false
+  EffectID: ae612164-ca4a-4fd2-bf19-b11aa5b79fa9
+  Layer: 0db59561-b3f5-444f-b5de-e62e3a5b42bf
+  OrderBias: 0
+  Parameters:
+    - Name: WorldViewProj
+      Type: Evergine.Mathematics.Matrix4x4,Evergine.Mathematics
+      ValueByteArray: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==
+    - Name: World
+      Type: Evergine.Mathematics.Matrix4x4,Evergine.Mathematics
+      ValueByteArray: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==
+    - Name: BottomColor
+      Type: Evergine.Mathematics.Vector3,Evergine.Mathematics
+      ValueByteArray: AAAAAAAAAAAAAAAA
+    - Name: ExtrudeAmount
+      Type: System.Single
+      ValueByteArray: CtejPQ==
+    - Name: TopColor
+      Type: Evergine.Mathematics.Vector3,Evergine.Mathematics
+      ValueByteArray: AACAPwAAgD8AAIA/
+  Samplers: null
+  Textures: null
+Profiles: {}

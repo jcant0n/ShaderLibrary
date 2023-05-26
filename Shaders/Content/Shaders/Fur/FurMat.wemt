@@ -1,0 +1,35 @@
+!Evergine.Assets.Exporters.MaterialMetaFile,Evergine.Assets
+Id: c4050ac6-79e8-40ae-8d87-c6e6f304e146
+DefaultProfile:
+  ExcludeAsset: false
+  Name: null
+  Platform: Undefined
+ExportAsRaw: false
+MaterialInfo:
+  Id: 4204ecf2-f231-43ca-971f-eedfc9fa0d72
+  ActiveDirectives: []
+  AllowInstancing: false
+  EffectID: de844f29-f305-475e-8b14-db9684698d2b
+  Layer: 0db59561-b3f5-444f-b5de-e62e3a5b42bf
+  OrderBias: 0
+  Parameters:
+    - Name: WorldViewProj
+      Type: Evergine.Mathematics.Matrix4x4,Evergine.Mathematics
+      ValueByteArray: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==
+    - Name: World
+      Type: Evergine.Mathematics.Matrix4x4,Evergine.Mathematics
+      ValueByteArray: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==
+    - Name: MaxHairLength
+      Type: System.Single
+      ValueByteArray: zcxMPQ==
+  Samplers:
+    - ID: 9018edf8-ea96-4721-bf83-5561942432e0
+      Name: TextureSampler
+    - ID: 5ff2641e-0761-41a4-a2b7-eb9481e49da3
+      Name: FurSampler
+  Textures:
+    - ID: d9a1329d-8eed-4b37-b2d1-697516dd1295
+      Name: DiffuseTexture
+    - ID: cc92ea79-4594-4236-8cac-47d872e0df0d
+      Name: FurTexture
+Profiles: {}
