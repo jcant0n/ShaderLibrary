@@ -6,7 +6,7 @@ DefaultProfile:
   Platform: Undefined
 ExportAsRaw: false
 MaterialInfo:
-  Id: 4204ecf2-f231-43ca-971f-eedfc9fa0d72
+  Id: 6f02b0b3-5499-46d5-91e4-dc1a4c6b9823
   ActiveDirectives: []
   AllowInstancing: false
   EffectID: de844f29-f305-475e-8b14-db9684698d2b
@@ -21,9 +21,12 @@ MaterialInfo:
       ValueByteArray: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==
     - Name: MaxHairLength
       Type: System.Single
-      ValueByteArray: zcxMPQ==
+      ValueByteArray: CtcjPA==
+    - Name: StartShadowValue
+      Type: System.Single
+      ValueByteArray: zcxMPg==
   Samplers:
-    - ID: 9018edf8-ea96-4721-bf83-5561942432e0
+    - ID: 7d1e2792-2031-42bb-a67c-0dbd282be12a
       Name: TextureSampler
     - ID: 5ff2641e-0761-41a4-a2b7-eb9481e49da3
       Name: FurSampler
