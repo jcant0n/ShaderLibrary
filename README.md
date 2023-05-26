@@ -6,6 +6,8 @@
 
 This is a collection of shaders written in HLSL using Evergine. The library provides a variety of shader effects to enhance the visual quality of your graphics applications. It includes implementations of popular effects such as Blinn-Phong, BRDF Microfacet, BRDF + IBL, IBL, etc.
 
+![Big-Picture](https://github.com/jcant0n/ShaderLibrary/raw/main/Screenshots/BigPicture.png)
+
 ## Shaders
 
 - **Blinn-Phong**: Implements the classic Blinn-Phong lighting model for realistic shading and highlights.
