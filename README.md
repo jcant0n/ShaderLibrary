@@ -32,7 +32,7 @@ This is a collection of shaders written in HLSL using Evergine. The library prov
 
 ## Requirements
 
-- Evergine: [Link to Evergine](https://www.evergine.com) (Version 2023.3.1 or higher)
+- Evergine: [Download Evergine](https://www.evergine.com) (Version 2023.3.1 or higher)
 - Graphics API: DirectX 11/12, OpenGL or Vulkan
 
 ## Take a look
@@ -40,7 +40,7 @@ This is a collection of shaders written in HLSL using Evergine. The library prov
 Follow the steps below to get started with using the shader library:
 
 1. Clone the repository: `git clone https://github.com/your-username/your-repo-name.git`
-2. Install the requierement Evergine version using the Evergine 
+2. Install the necessary Evergine version using the Evergine Launcher.
 3. Build and run your project to see the shader effects in action.
 
 ## Contributing
