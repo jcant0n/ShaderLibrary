@@ -12,4 +12,28 @@ Profiles:
     Name: Windows
     NonAlphaCompressionFormat: BC3_UNorm
     Platform: Windows
+  - AdditionalEffectTechniqueCombinations: SHADOW_SUPPORTED-SHADOWFILTER3,SHADOW_SUPPORTED-SHADOWFILTER3-POINT_LIGHT,SHADOW_SUPPORTED-SHADOWFILTER3-SPOT_LIGHT,SHADOW_SUPPORTED-SHADOWFILTER3-POINT_LIGHT-SPOT_LIGHT
+    AlphaCompressionFormat: BC3_UNorm
+    CompileEffects: false
+    GraphicsBackend: DirectX12
+    LauncherType: DirectX12
+    Name: Windows.DirectX12
+    NonAlphaCompressionFormat: BC3_UNorm
+    Platform: Windows
+  - AdditionalEffectTechniqueCombinations: SHADOW_SUPPORTED-SHADOWFILTER3,SHADOW_SUPPORTED-SHADOWFILTER3-POINT_LIGHT,SHADOW_SUPPORTED-SHADOWFILTER3-SPOT_LIGHT,SHADOW_SUPPORTED-SHADOWFILTER3-POINT_LIGHT-SPOT_LIGHT
+    AlphaCompressionFormat: R8G8B8A8_UNorm
+    CompileEffects: false
+    GraphicsBackend: Vulkan
+    LauncherType: Vulkan
+    Name: Windows.Vulkan
+    NonAlphaCompressionFormat: R8G8B8A8_UNorm
+    Platform: Windows
+  - AdditionalEffectTechniqueCombinations: SHADOW_SUPPORTED-SHADOWFILTER3,SHADOW_SUPPORTED-SHADOWFILTER3-POINT_LIGHT,SHADOW_SUPPORTED-SHADOWFILTER3-SPOT_LIGHT,SHADOW_SUPPORTED-SHADOWFILTER3-POINT_LIGHT-SPOT_LIGHT
+    AlphaCompressionFormat: R8G8B8A8_UNorm
+    CompileEffects: false
+    GraphicsBackend: OpenGL
+    LauncherType: OpenGL
+    Name: Windows.OpenGL
+    NonAlphaCompressionFormat: R8G8B8A8_UNorm
+    Platform: Windows
 ResourcesPath: Content
