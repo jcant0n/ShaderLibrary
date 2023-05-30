@@ -31,6 +31,7 @@ This is a collection of shaders written in HLSL using Evergine. The library prov
 - **Translucency Shading**: Simulates light passing through translucent materials for realistic rendering.
 - **Vertex Normals GS**: Calculates vertex normals in the Geometry Shader stage for improved shading accuracy.
 - **Wireframe GS**: Renders objects as wireframes using the Geometry Shader stage.
+- **WrapShading**: Fast subsurface scattering by modulating the shading based on their orientation relative to the incident light.
 
 ## Screenshots
 
@@ -58,6 +59,7 @@ Here are some screenshots showcasing the shader effects in action:
 ![Translucency Shading](https://github.com/jcant0n/ShaderLibrary/raw/main/Screenshots/Traslucency.png)
 ![Vertex Normals GS](https://github.com/jcant0n/ShaderLibrary/raw/main/Screenshots/VertexNormals.png)
 ![Wireframe GS](https://github.com/jcant0n/ShaderLibrary/raw/main/Screenshots/WireFrameGS.png)
+![WrapShading](https://github.com/jcant0n/ShaderLibrary/blob/main/Screenshots/WrapShading.png)
 
 ## Requirements
 
